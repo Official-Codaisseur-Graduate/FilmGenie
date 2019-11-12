@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class CountryList extends Component {
+export default class CountryList extends Component {
     render() {
         return (
             //This is downloaded as code learning example, may or may not be a full or correct list.

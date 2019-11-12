@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux'
 import CountryList from "./CountryList";
 
 export class NewAgentForm extends Component {
@@ -51,3 +52,14 @@ export class NewAgentForm extends Component {
     );
   }
 }
+
+
+const mapStateToProps = (state) => ({
+    
+})
+
+const mapDispatchToProps = {
+    
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewAgentForm)

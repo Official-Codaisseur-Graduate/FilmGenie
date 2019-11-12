@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux'
 
 export class RegistrationHome extends Component {
   render() {
@@ -23,3 +24,14 @@ export class RegistrationHome extends Component {
     );
   }
 }
+
+
+const mapStateToProps = (state) => ({
+    
+})
+
+const mapDispatchToProps = {
+    
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(RegistrationHome)
