@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux'
 
 export class ChoiceButtons extends Component {
   render() {
@@ -11,3 +12,13 @@ export class ChoiceButtons extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  
+})
+
+const mapDispatchToProps = {
+  
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ChoiceButtons)
