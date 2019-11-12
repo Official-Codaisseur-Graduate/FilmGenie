@@ -25,7 +25,6 @@ export class RegistrationHome extends Component {
   }
 }
 
-
 const mapStateToProps = (state) => ({
     
 })
