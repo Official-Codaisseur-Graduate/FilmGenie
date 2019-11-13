@@ -5,11 +5,11 @@ import ChoiceButtons from "../../UI/ChoiceButtons";
 
 export default class FilmAgentRegistration extends React.Component {
   newFilmAgent = () =>{
-    this.props.history.push("/filmAgent/newAgent/NewFilmAgent")
+    this.props.history.push("/filmAgent/newAgent/NewFilmAgent") // page 4
   }
 
   registeredFilmAgent = () => {
-    this.props.history.push("/filmAgent/registeredAgent/RegisteredFilmAgent")
+    this.props.history.push("/filmAgent/registeredAgent/RegisteredFilmAgent") //page 6
   }
 
   render() {

@@ -1,11 +1,35 @@
 //page 5
 
-import React from "react"
+import React from "react";
+import ChoiceButtons from "../../../UI/ChoiceButtons";
 
 export default class NewFilmExhibitor extends React.Component {
-  render() {
-    return (<div>
+  runFilmFestival = () => {
+    this.props.history.push("/filmAgent/newAgent/NewFilmFestival"); //page 10
+  };
 
-    </div>)
+  runCinemas = () => {
+    this.props.history.push("/filmAgent/newAgent/NewCinemaOrCinemaGroup"); //page 11
+  };
+
+  render() {
+    const choice1 = {
+      name: "I run a film festival",
+      action: this.runFilmFestival
+    };
+
+    const choice2 = {
+      name: "I run a (or more) cinema(s)",
+      action: this.runCinemas
+    };
+
+    return (
+      <div>
+        <div>
+          <h3>New film exhibitor</h3>
+          <ChoiceButtons choice1={choice1} choice2={choice2} />
+        </div>
+      </div>
+    );
   }
-} 
+}
