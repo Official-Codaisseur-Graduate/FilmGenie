@@ -67,5 +67,3 @@ export default class CinemaAgentsForm extends React.Component {
     )
   }
 }
-
-export default CinemaAgentsForm

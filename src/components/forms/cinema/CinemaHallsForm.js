@@ -42,5 +42,3 @@ export default class CinemaHallsForm extends React.Component {
     )
   }
 }
-
-export default CinemaHallsForm
