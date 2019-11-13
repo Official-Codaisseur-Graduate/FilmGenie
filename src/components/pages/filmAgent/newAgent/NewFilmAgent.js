@@ -2,6 +2,7 @@
 
 import React from "react";
 import ChoiceButtons from "../../../UI/ChoiceButtons";
+import GoBackButton from "../../../UI/GoBackButton";
 
 export default class NewFilmAgent extends React.Component {
   filmLookForScreen = () => {
@@ -26,6 +27,8 @@ export default class NewFilmAgent extends React.Component {
     return (
       <div>
         <div>
+          <GoBackButton path="/filmAgent/FilmAgentRegistration" />
+
           <h3>New film agent</h3>
           <ChoiceButtons choice1={choice1} choice2={choice2} />
         </div>

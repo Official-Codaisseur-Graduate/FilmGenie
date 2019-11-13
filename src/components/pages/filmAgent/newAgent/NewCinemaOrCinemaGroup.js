@@ -2,6 +2,7 @@
 
 import React from "react";
 import ChoiceButtons from "../../../UI/ChoiceButtons";
+import GoBackButton from "../../../UI/GoBackButton";
 
 export default class NewCinemaOrCinemaGroup extends React.Component {
   runCinemaGroup = () => {
@@ -26,6 +27,8 @@ export default class NewCinemaOrCinemaGroup extends React.Component {
     return (
       <div>
         <div>
+          <GoBackButton path="/filmAgent/newAgent/NewFilmExhibitor" />
+
           <h3>New cinema(group)</h3>
           <ChoiceButtons choice1={choice1} choice2={choice2} />
         </div>
