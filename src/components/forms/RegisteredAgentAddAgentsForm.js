@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux'
-
-import React, { Component } from "react";
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 import CountryList from "./CountryList";
 
-export class RegisteredAgentAddAgentsForm extends Component {
+export default class RegisteredAgentAddAgentsForm extends Component {
   render() {
     const { type } = this.props;
     return (
@@ -57,12 +54,12 @@ export class RegisteredAgentAddAgentsForm extends Component {
 }
 
 
-const mapStateToProps = (state) => ({
+// const mapStateToProps = (state) => ({
     
-})
+// })
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
     
-}
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentAddAgentsFor)
+// export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentAddAgentsFor)
