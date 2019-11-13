@@ -58,10 +58,16 @@ import Screenings from './components/pages/cinemaGoer/registeredCinemaGoer/filmS
 import Tickets from './components/pages/cinemaGoer/registeredCinemaGoer/filmScreenings/Tickets'
 
 
+
+
+
+
+
+
 function Routes() {
   return (<div>
     {/* first route = page 1, last route = page 40 */}
-    
+  
     <Route path="/" exact component={Start} /> 
     <Route path="/filmAgent/FilmAgentRegistration" exact component={FilmAgentRegistration} /> 
     <Route path="/cinemaGoer/CinemaGoerRegistration" exact component={CinemaGoerRegistration} />

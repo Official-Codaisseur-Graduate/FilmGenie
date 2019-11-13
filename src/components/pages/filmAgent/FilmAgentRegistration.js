@@ -1,5 +1,4 @@
 //page 2
-
 import React from "react";
 import ChoiceButtons from "../../UI/ChoiceButtons";
 import GoBackButton from "../../UI/GoBackButton";

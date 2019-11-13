@@ -27,7 +27,11 @@ export default class RegisteredAgentAddAgentsForm extends Component {
       <div>
         <form>
           <div>
+
+            {/* In administator there should be filled in data */}
+            <label htmlFor="name">{type}</label>
             <label htmlFor="name">{nameAgent}</label>
+
               <input type="text" name="agent_type" placeholder="Name"></input>
             <label htmlFor="administrator">Administrator</label>
              <input type="text" name="full_name" placeholder="Full Name"></input>
