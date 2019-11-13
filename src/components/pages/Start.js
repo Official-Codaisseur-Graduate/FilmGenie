@@ -1,11 +1,11 @@
-//page 40
+//page 1
 
 import React from "react"
 
-export default class Film extends React.Component {
+export default class Start extends React.Component {
   render() {
     return (<div>
-
+      Start
     </div>)
   }
 } 
