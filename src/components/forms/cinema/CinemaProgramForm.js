@@ -55,5 +55,3 @@ export default class CinemaProgramForm extends React.Component {
     )
   }
 }
-
-export default CinemaProgramForm
