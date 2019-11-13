@@ -65,5 +65,3 @@ export default class RightOwnerAgentsForm extends React.Component {
     )
   }
 }
-
-export default RightOwnerAgentsForm
