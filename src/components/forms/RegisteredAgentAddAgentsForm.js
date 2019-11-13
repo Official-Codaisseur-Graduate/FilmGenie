@@ -12,6 +12,7 @@ export class RegisteredAgentAddAgentsForm extends Component {
       <div>
         <form>
           <div>
+            {/* In administator there should be filled in data */}
             <label htmlFor="name">{type}</label>
               <input type="text" name="agent_type" placeholder="Name"></input>
             <label htmlFor="administrator">Administrator</label>
