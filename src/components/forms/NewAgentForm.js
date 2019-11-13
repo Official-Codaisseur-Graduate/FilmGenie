@@ -1,15 +1,40 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux'
-import CountryList from "./CountryList";
+// import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
+import CountryList from "./lists/CountryList";
 
-export class NewAgentForm extends Component {
+class NewAgentForm extends Component {
+  handleSubmit = event => {
+    event.preventDefault();
+
+    this.props.history.push("/filmAgent/registeredAgent/RegisteredFilmAgent")
+  }
+
+  getNameLabel = type => {
+    switch (type) {
+      case "right owner":
+        return "Company";
+      case "film festival":
+        return "Festival organization";
+      case "cinema group":
+        return "Cinema group";
+      case "cinema":
+        return "Cinema";
+      default:
+        return null;
+    }
+  };
+
   render() {
     const { type } = this.props;
+    const nameLabel = this.getNameLabel(type)
+
     return (
       <div>
-        <form>
+        <h3>New {type}</h3>
+        <form onSubmit={this.handleSubmit}>
           <div>
-            <h3>{type}</h3>
+            <h5>{nameLabel}</h5>
             <label htmlFor="address1">Address 1</label>
             <input type="text" name="address1"></input>
             <label htmlFor="2">Address 2</label>
@@ -30,7 +55,7 @@ export class NewAgentForm extends Component {
             <input type="text" name="iban"></input>
           </div>
           <div>
-            <h3>Administrator</h3>
+            <h5>Administrator</h5>
             <label htmlFor="fullname">Full name</label>
             <input type="text" name="fullname"></input>
             <label htmlFor="firstname">First name</label>
@@ -53,13 +78,14 @@ export class NewAgentForm extends Component {
   }
 }
 
+export default withRouter(NewAgentForm)
 
-const mapStateToProps = (state) => ({
-    
-})
+// const mapStateToProps = (state) => ({
 
-const mapDispatchToProps = {
-    
-}
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewAgentForm)
+// const mapDispatchToProps = {
+
+// }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(NewAgentForm)
