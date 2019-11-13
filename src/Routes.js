@@ -60,8 +60,10 @@ import Tickets from './components/pages/cinemaGoer/registeredCinemaGoer/filmScre
 
 function Routes() {
   return (<div>
-    <Route path="/Start" exact component={Start} /> 
-    <Route path="/filmAgent/FilmAgentRegistration" exact component={FilmAgentRegistration} />
+    {/* first route = page 1, last route = page 40 */}
+    
+    <Route path="/" exact component={Start} /> 
+    <Route path="/filmAgent/FilmAgentRegistration" exact component={FilmAgentRegistration} /> 
     <Route path="/cinemaGoer/CinemaGoerRegistration" exact component={CinemaGoerRegistration} />
     <Route path="/filmAgent/newAgent/NewFilmAgent" exact component={NewFilmAgent} />
     <Route path="/filmAgent/newAgent/NewFilmExhibitor" exact component={NewFilmExhibitor} />

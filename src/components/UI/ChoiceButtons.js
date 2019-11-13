@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux'
+//import { connect } from 'react-redux'
 
-export class ChoiceButtons extends Component {
+export default class ChoiceButtons extends Component {
   render() {
     const { choice1, choice2 } = this.props;
     return (
@@ -13,12 +13,12 @@ export class ChoiceButtons extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+// const mapStateToProps = (state) => ({
   
-})
+// })
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
   
-}
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ChoiceButtons)
+// export default connect(mapStateToProps, mapDispatchToProps)(ChoiceButtons)
