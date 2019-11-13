@@ -2,7 +2,7 @@
 
 import React from "react"
 
-export default class CinemaGoer extends React.Component {
+export default class CinemaGoerRegistration extends React.Component {
   render() {
     return (<div>
 
