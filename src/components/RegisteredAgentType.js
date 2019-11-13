@@ -16,6 +16,7 @@ export class RegisteredAgentType extends Component {
         return null;
     }
   };
+  
   render() {
     const { type } = this.props;
     const nameLabel = getNameLabel(type);
