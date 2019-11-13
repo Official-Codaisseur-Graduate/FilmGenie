@@ -55,5 +55,3 @@ export default class RightOwnerFilmsForm extends React.Component {
     )
   }
 }
-
-export default RightOwnerFilmsForm

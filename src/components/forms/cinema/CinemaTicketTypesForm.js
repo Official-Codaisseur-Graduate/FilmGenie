@@ -1,6 +1,7 @@
 // page 31
 
 import React from 'react'
+// import CurrencyList from './'
 
 export default class CinemaTicketTypesForm extends React.Component {
   render() {
@@ -18,10 +19,7 @@ export default class CinemaTicketTypesForm extends React.Component {
               <input type='number' name='amount' placeholder='Amount'></input>
             </label>
             <label>
-              <select name='currency' placeholder='Currency'>
-                <option value="EUR">EUR</option>
-                <option value="USD">USD</option>
-              </select>
+              <CurrencyList />
             </label>
           </form>
         </div>
@@ -37,10 +35,7 @@ export default class CinemaTicketTypesForm extends React.Component {
               <input type='number' name='amount' placeholder='Amount'></input>
             </label>
             <label>
-              <select name='currency' placeholder='Currency'>
-                <option value="EUR">EUR</option>
-                <option value="USD">USD</option>
-              </select>
+              <CurrencyList />
             </label>
           </form>
         </div>
@@ -48,5 +43,3 @@ export default class CinemaTicketTypesForm extends React.Component {
     )
   }
 }
-
-export default CinemaTicketTypesForm

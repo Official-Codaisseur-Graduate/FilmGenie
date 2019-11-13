@@ -65,5 +65,3 @@ export default class FilmFestivalAgentsForm extends React.Component {
     )
   }
 }
-
-export default FilmFestivalAgentsForm

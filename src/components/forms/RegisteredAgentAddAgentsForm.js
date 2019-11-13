@@ -1,15 +1,33 @@
+// page: 15, 18, 21, 24
+
 import React, { Component } from "react";
 // import { connect } from 'react-redux'
-import CountryList from "./CountryList";
 
 export default class RegisteredAgentAddAgentsForm extends Component {
+  agentType = type => {
+    switch (type) {
+      case "right owner":
+        return "Right owner";
+      case "film festival":
+        return "Festival organization";
+      case "cinema group":
+        return "Cinema group";
+      case "cinema":
+        return "Cinema";
+      default:
+        return null;
+    }
+  };
+
   render() {
     const { type } = this.props;
+    const nameAgent = agentType(type);
+
     return (
       <div>
         <form>
           <div>
-            <label htmlFor="name">{type}</label>
+            <label htmlFor="name">{nameAgent}</label>
               <input type="text" name="agent_type" placeholder="Name"></input>
             <label htmlFor="administrator">Administrator</label>
              <input type="text" name="full_name" placeholder="Full Name"></input>

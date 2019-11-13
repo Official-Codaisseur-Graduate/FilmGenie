@@ -1,4 +1,4 @@
-// page 40
+// page 37
 
 import React from 'react'
 // import CountryList from './'
@@ -6,7 +6,7 @@ import React from 'react'
 // import GenreList from './'
 
 
-export default class FilmForm extends React.Component {
+export default class CinemaGoerFilmsForm extends React.Component {
   render() {
     return (
       <div>
@@ -24,31 +24,21 @@ export default class FilmForm extends React.Component {
             <label> Country
               <CountryList />
             </label>
+            <label> Running Time
+              <input type='number' name='running_time' placeholder='Minutes'></input>
+            </label>
             <br />
             <label> Actors
               <input type='text' name='actors' placeholder='Actors'></input>
             </label>
+            <br />
             <label> 
               <GenresList />
-            </label>
-            <label> Running Time
-              <input type='number' name='running_time' placeholder='Minutes'></input>
             </label>
             <label> Etc.
               <input type='text' name='etc' placeholder='Etc.'></input>
             </label>
-            <br />
-            <label> 
-              <input type='text' name='imdb_info' placeholder='Imdb Info'></input>
-            </label>
-            <button>Imdb trailer</button>
-            <br />
-            <label> 
-              <input type='text' name='local_info' placeholder='Local Info'></input>
-            </label>
-            <label> 
-              <input type='text' name='territory' placeholder='Territory'></input>
-            </label>
+            <button>search/filter</button>
             <button>local trailer</button>
           </form>
         </div>
