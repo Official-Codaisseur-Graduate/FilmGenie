@@ -1,11 +1,17 @@
 //page 13
 
-import React from "react"
+import React from "react";
+import NewAgentForm from "../../../forms/NewAgentForm";
+import GoBackButton from "../../../UI/GoBackButton";
 
 export default class NewCinema extends React.Component {
   render() {
-    return (<div>
+    return (
+      <div>
+        <GoBackButton path="/filmAgent/newAgent/NewCinemaOrCinemaGroup" />
 
-    </div>)
+        <NewAgentForm type="cinema" />
+      </div>
+    );
   }
-} 
+}

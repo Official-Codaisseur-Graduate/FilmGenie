@@ -2,15 +2,16 @@
 
 import React from "react";
 import ChoiceButtons from "../../UI/ChoiceButtons";
+import GoBackButton from "../../UI/GoBackButton";
 
 export default class FilmAgentRegistration extends React.Component {
-  newFilmAgent = () =>{
-    this.props.history.push("/4")
-  }
+  newFilmAgent = () => {
+    this.props.history.push("/filmAgent/newAgent/NewFilmAgent"); // page 4
+  };
 
   registeredFilmAgent = () => {
-    this.props.history.push("/6")
-  }
+    this.props.history.push("/filmAgent/registeredAgent/RegisteredFilmAgent"); //page 6
+  };
 
   render() {
     const choice1 = {
@@ -26,6 +27,7 @@ export default class FilmAgentRegistration extends React.Component {
     return (
       <div>
         <div>
+          <GoBackButton path="/" />
           <h3>Film agent</h3>
           <ChoiceButtons choice1={choice1} choice2={choice2} />
         </div>

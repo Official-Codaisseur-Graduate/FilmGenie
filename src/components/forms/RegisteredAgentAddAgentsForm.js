@@ -1,9 +1,9 @@
 // page: 15, 18, 21, 24
 
 import React, { Component } from "react";
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 
-class RegisteredAgentAddAgentsForm extends Component {
+export default class RegisteredAgentAddAgentsForm extends Component {
   agentType = type => {
     switch (type) {
       case "right owner":
@@ -72,12 +72,12 @@ class RegisteredAgentAddAgentsForm extends Component {
 }
 
 
-const mapStateToProps = (state) => ({
+// const mapStateToProps = (state) => ({
     
-})
+// })
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
     
-}
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentAddAgentsForm)
+// export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentAddAgentsFor)
