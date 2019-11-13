@@ -2,10 +2,10 @@
 
 import React from "react"
 
-export default class Cinemagoer extends React.Component {
+export default class CinemaGoer extends React.Component {
   render() {
     return (<div>
-
+      CinemaGoer
     </div>)
   }
 } 

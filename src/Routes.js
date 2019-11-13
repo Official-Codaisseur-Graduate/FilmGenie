@@ -6,7 +6,7 @@ import Start from './components/pages/Start'
 import Film from './components/pages/Film'
 
 // pages/filmAgent
-import FilmAgent from './components/pages/filmAgent/FilmAgent'
+import FilmAgentRegistration from './components/pages/filmAgent/FilmAgentRegistration'
 import AccessControl from './components/pages/filmAgent/AccessControl'
 // pages/filmAgent/newAgent
 import NewCinema from './components/pages/filmAgent/newAgent/NewCinema'
@@ -43,13 +43,13 @@ import RightOwnerDetails from './components/pages/filmAgent/registeredAgent/righ
 import RightOwnerFilms from './components/pages/filmAgent/registeredAgent/rightOwner/RightOwnerFilms'
 
 // pages/cinemaGoer
-import CinemaGoer from './components/pages/cinemaGoer/CinemaGoer'
+import CinemaGoerRegistration from './components/pages/cinemaGoer/CinemaGoerRegistration'
 import Ticket from './components/pages/cinemaGoer/Ticket'
 // pages/cinemaGoer/newCinemaGoer
 import NewCinemaGoer from './components/pages/cinemaGoer/newCinemaGoer/NewCinemaGoer'
 // pages/cinemaGoer/registeredCinemaGoer
 import RegisteredCinemaGoer from './components/pages/cinemaGoer/registeredCinemaGoer/RegisteredCinemaGoer'
-import Cinemagoer from './components/pages/cinemaGoer/registeredCinemaGoer/Cinemagoer'
+import CinemaGoer from './components/pages/cinemaGoer/registeredCinemaGoer/CinemaGoer'
 // pages/cinemaGoer/registeredCinemaGoer/films
 import Films from './components/pages/cinemaGoer/registeredCinemaGoer/films/Films'
 import ScreeningsOfSelectedFilm from './components/pages/cinemaGoer/registeredCinemaGoer/films/ScreeningsOfSelectedFilm'
@@ -61,13 +61,13 @@ import Tickets from './components/pages/cinemaGoer/registeredCinemaGoer/filmScre
 function Routes() {
   return (<div>
     <Route path="/1" exact component={Start} />
-    <Route path="/2" exact component={FilmAgent} />
-    <Route path="/3" exact component={CinemaGoer} />
+    <Route path="/2" exact component={FilmAgentRegistration} />
+    <Route path="/3" exact component={CinemaGoerRegistration} />
     <Route path="/4" exact component={NewFilmAgent} />
     <Route path="/5" exact component={NewFilmExhibitor} />
     <Route path="/6" exact component={RegisteredFilmAgent} />
     <Route path="/7" exact component={RegisteredCinemaGoer} />
-    <Route path="/8" exact component={Cinemagoer} />
+    <Route path="/8" exact component={CinemaGoer} />
     <Route path="/9" exact component={NewRightOwner} />
     <Route path="/10" exact component={NewFilmFestival} />
     <Route path="/11" exact component={NewCinemaOrCinemaGroup} />
