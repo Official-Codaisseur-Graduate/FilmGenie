@@ -32,18 +32,19 @@ export default class RegisteredAgentAddAgentsForm extends Component {
           <div>
             {/* In administator there should be filled in data */}
             <label htmlFor="name">{nameAgent}</label>
+
             <input type="text" name="agent_type" placeholder="Name"></input>
             <label htmlFor="administrator">Administrator</label>
-            <input type="text" name="full_name" placeholder="Full name"></input>
-            <label htmlFor="firstname"></label> First name
+            <input type="text" name="full_name" placeholder="Full Name"></input>
+            <label htmlFor="firstname"></label>
             <input
               type="text"
               name="firstname"
-              placeholder="First name"
+              placeholder="First Name"
             ></input>
-            <label htmlFor="lastname">Last name</label>
-            <input type="text" name="lastname" placeholder="Last name"></input>
-            <label htmlFor="job">Job</label>
+            <label htmlFor="lastname"></label>
+            <input type="text" name="lastname" placeholder="Last Name"></input>
+            <label htmlFor="job"></label>
             <input type="text" name="job" placeholder="Job"></input>
           </div>
 
@@ -52,15 +53,15 @@ export default class RegisteredAgentAddAgentsForm extends Component {
           <div>
             <label htmlFor="editor">Editor</label>
             <input type="text" name="full_name" placeholder="Full Name"></input>
-            <label htmlFor="firstname">First name</label>
+            <label htmlFor="firstname"></label>
             <input
               type="text"
               name="firstname"
               placeholder="First Name"
             ></input>
-            <label htmlFor="lastname">Last name</label>
+            <label htmlFor="lastname"></label>
             <input type="text" name="lastname" placeholder="Last Name"></input>
-            <label htmlFor="job">Job</label>
+            <label htmlFor="job"></label>
             <input type="text" name="job" placeholder="Job"></input>
           </div>
 
@@ -69,15 +70,15 @@ export default class RegisteredAgentAddAgentsForm extends Component {
           <div>
             <label htmlFor="editor">Reader</label>
             <input type="text" name="full_name" placeholder="Full Name"></input>
-            <label htmlFor="firstname">First name</label>
+            <label htmlFor="firstname"></label>
             <input
               type="text"
               name="firstname"
               placeholder="First Name"
             ></input>
-            <label htmlFor="lastname">Last name</label>
+            <label htmlFor="lastname"></label>
             <input type="text" name="lastname" placeholder="Last Name"></input>
-            <label htmlFor="job">Job</label>
+            <label htmlFor="job"></label>
             <input type="text" name="job" placeholder="Job"></input>
           </div>
         </form>

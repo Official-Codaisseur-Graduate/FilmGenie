@@ -1,29 +1,30 @@
 // page 22
 
 import React from 'react'
-import CinemaName from './CinemaName'
 
 export default class CinemaProgramForm extends React.Component {
   render() {
     return (
       <div>
-        <CinemaName />
         <div>
           <form>
-            <label> Screening
+            <label> Cinema
+              <input type='text' name='cinema_name' placeholder='Name'></input>
+            </label>
+            <label> Screening 1
               <input type='text' name='title' placeholder='Title'></input>
             </label>
-            <label> Date
-              <input type='date' name='date' placeholder='Date'></input>
+            <label>
+              <input type='date' name='play_date' placeholder='Play date'></input>
             </label>
-            <label> Time
+            <label>
               <input type='time' name='time' placeholder='Time'></input>
             </label>
-            <label> Hall
+            <label>
               <input type='text' name='hall' placeholder='Hall'></input>
             </label>
-            <label> Ticket type
-              <input type='text' name='ticket_type' placeholder='Ticket type'></input>
+            <label>
+              <input type='text' name='screening_ticket_types' placeholder='Screening ticket types'></input>
             </label>
           </form>
           <button onClick={this.props.accessControl}>Access control</button>
@@ -33,20 +34,20 @@ export default class CinemaProgramForm extends React.Component {
 
         <div>
           <form>
-          <label> Screening
+          <label> Screening 2
               <input type='text' name='title' placeholder='Title'></input>
             </label>
-            <label> Date
-              <input type='date' name='date' placeholder='Date'></input>
+            <label>
+              <input type='date' name='play_date' placeholder='Play date'></input>
             </label>
-            <label> Time
+            <label>
               <input type='time' name='time' placeholder='Time'></input>
             </label>
-            <label> Hall
+            <label>
               <input type='text' name='hall' placeholder='Hall'></input>
             </label>
-            <label> Ticket type
-              <input type='text' name='ticket_type' placeholder='Ticket type'></input>
+            <label>
+              <input type='text' name='screening_ticket_types' placeholder='Screening ticket types'></input>
             </label>
           </form>
         </div>

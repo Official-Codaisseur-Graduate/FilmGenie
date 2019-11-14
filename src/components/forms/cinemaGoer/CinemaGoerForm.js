@@ -7,29 +7,28 @@ export default class CinemaGoerForm extends React.Component {
     return (
       <div>
         <div>
-        {/* clarify if this form is needed */}
-          <form> 
-            <label> Full Name
+          <form>
+            <label> 
               <input type='text' name='fullname' placeholder='Full Name'></input>
             </label>
             <br />
-            <label> First Name
+            <label> 
               <input type='text' name='firstname' placeholder='First Name'></input>
             </label>
             <br />
-            <label> Last Name
+            <label>
               <input type='text' name='lastname' placeholder='Last Name'></input>
             </label>
             <br />
-            <label> City
+            <label>
               <input type='text' name='City' placeholder='City'></input>
             </label>
             <br />
-            <label> E-mail address
+            <label>
               <input type='text' name='email' placeholder='E-mail address'></input>
             </label>
             <br />
-            <label> Password
+            <label>
               <input type='text' name='password' placeholder='Password'></input>
             </label>
           </form>

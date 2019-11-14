@@ -1,24 +1,25 @@
 // page 31
 
 import React from 'react'
-import CurrencyList from '../lists/CurrencyList'
-import CinemaName from './CinemaName'
+// import CurrencyList from './'
 
 export default class CinemaTicketTypesForm extends React.Component {
   render() {
     return (
       <div>
-        <CinemaName />
         <div>
           <form>
-            <label> Ticket type
+            <label> Cinema
+              <input type='text' name='cinema_name' placeholder='Name'></input>
+            </label>
+            <label> Ticket type 1
               <input type='text' name='description' placeholder='Description'></input>
             </label>
-            <label> Amount
+            <label>
               <input type='number' name='amount' placeholder='Amount'></input>
             </label>
             <label>
-              <CurrencyList />
+              {/* <CurrencyList /> */}
             </label>
           </form>
         </div>
@@ -27,14 +28,14 @@ export default class CinemaTicketTypesForm extends React.Component {
 
         <div>
           <form>
-            <label> Ticket type
+            <label> Ticket type 2
               <input type='text' name='description' placeholder='Description'></input>
             </label>
-            <label> Amount
+            <label>
               <input type='number' name='amount' placeholder='Amount'></input>
             </label>
             <label>
-              <CurrencyList />
+              {/* <CurrencyList /> */}
             </label>
           </form>
         </div>

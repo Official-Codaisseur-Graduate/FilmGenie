@@ -38,15 +38,15 @@ export default class FilmForm extends React.Component {
               <input type='text' name='etc' placeholder='Etc.'></input>
             </label>
             <br />
-            <label> IMDB Info
-              <input type='text' name='imdb_info' placeholder='IMDB Info'></input>
+            <label> 
+              <input type='text' name='imdb_info' placeholder='Imdb Info'></input>
             </label>
-            <button>IMDB trailer</button>
+            <button>Imdb trailer</button>
             <br />
-            <label> Local Info
+            <label> 
               <input type='text' name='local_info' placeholder='Local Info'></input>
             </label>
-            <label> Territory
+            <label> 
               <input type='text' name='territory' placeholder='Territory'></input>
             </label>
             <button>local trailer</button>

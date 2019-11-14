@@ -1,22 +1,23 @@
 // page 16
 
 import React from 'react'
-import FestivalOrganizationName from './FestivalOrganizationName'
 
 export default class FilmFestivalEditionsForm extends React.Component {
   render() {
     return (
       <div>
-        <FestivalOrganizationName />
         <div>
           <form>
+            <label> Festival organization
+              <input type='text' name='festival_organization_name' placeholder='Name'></input>
+            </label>
             <label> 1st Edition
               <input type='text' name='description' placeholder='Description'></input>
             </label>
-            <label> Start Date
+            <label>
               <input type='date' name='start_date' placeholder='Start date'></input>
             </label>
-            <label> End Date
+            <label>
               <input type='date' name='end_date' placeholder='End date'>
               </input>
             </label>
@@ -31,11 +32,11 @@ export default class FilmFestivalEditionsForm extends React.Component {
             <label> Edition
               <input type='text' name='description' placeholder='Description'></input>
             </label>
-            <label> Start date
+            <label>
               <input type='date' name='start_date' placeholder='Start date'></input>
             </label>
             <br />
-            <label> End date
+            <label>
               <input type='date' name='end_date' placeholder='End date'></input>
             </label>
           </form>
