@@ -26,7 +26,7 @@ export default class RightOwnerFilmsForm extends React.Component {
             <label>
               <input type='date' name='end_date' placeholder='End date'></input>
             </label>
-            <button>details</button>
+            <button onClick={this.props.details}>details</button>
           </form>
         </div>
 

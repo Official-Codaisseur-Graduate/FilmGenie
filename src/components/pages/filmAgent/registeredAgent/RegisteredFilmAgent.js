@@ -35,7 +35,8 @@ export default class RegisteredFilmAgent extends React.Component {
   render() {
     return (<div>
       <div>
-      <GoBackButton path="/filmAgent/FilmAgentRegistration"/>
+        <GoBackButton path="/filmAgent/FilmAgentRegistration" />
+        <h3>Registered film agent</h3>
         <LoginForm onSubmit={this.onSubmit} />
       </div>
       {this.state.showButtonsMode === false ?

@@ -22,14 +22,18 @@ export default class Cinema extends React.Component {
     this.props.history.push("/filmAgent/registeredAgent/cinema/CinemaProgram"); // page 22
   };
 
+  details = () => {
+    this.props.history.push("/filmAgent/registeredAgent/cinema/CinemaDetails") //page 29
+  }
+
   render() {
     const choice1 = {
-      name: "Agent",
+      name: "Agents",
       action: this.agent
     };
 
     const choice2 = {
-      name: "Hall",
+      name: "Halls",
       action: this.hall
     };
 
@@ -48,7 +52,7 @@ export default class Cinema extends React.Component {
         <div>
           <GoBackButton path="/filmAgent/registeredAgent/RegisteredFilmAgent" />
           <h3>Cinema</h3>
-          <RegisteredAgentForm type="cinema"/>
+          <RegisteredAgentForm type="cinema" details={this.details}/>
           <ChoiceButtons choice1={choice1} choice2={choice2} />
           <ChoiceButtons choice1={choice3} choice2={choice4} />
         </div>

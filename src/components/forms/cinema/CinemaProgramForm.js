@@ -27,7 +27,7 @@ export default class CinemaProgramForm extends React.Component {
               <input type='text' name='screening_ticket_types' placeholder='Screening ticket types'></input>
             </label>
           </form>
-          <button>Access control</button>
+          <button onClick={this.props.accessControl}>Access control</button>
         </div>
 
         <button>plus_sign</button>
