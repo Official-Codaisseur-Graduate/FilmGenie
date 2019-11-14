@@ -2,6 +2,7 @@
 
 import React from "react"
 import LoginForm from "../../../forms/LoginForm"
+import GoBackButton from "../../../UI/GoBackButton";
 
 export default class RegisteredFilmAgent extends React.Component {
   state = {
@@ -34,6 +35,7 @@ export default class RegisteredFilmAgent extends React.Component {
   render() {
     return (<div>
       <div>
+      <GoBackButton path="/filmAgent/FilmAgentRegistration"/>
         <LoginForm onSubmit={this.onSubmit} />
       </div>
       {this.state.showButtonsMode === false ?
