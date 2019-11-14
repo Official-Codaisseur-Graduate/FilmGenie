@@ -26,7 +26,7 @@ export default class CinemaGoer extends React.Component {
     event.preventDefault();
 
      this.props.history.push(
-      "cinemaGoer/registeredCinemaGoer/filmScreenings/Screenings"
+      "/cinemaGoer/registeredCinemaGoer/filmScreenings/Screenings"
     ); //page 32
   }
 
