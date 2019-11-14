@@ -4,8 +4,8 @@ export default class YearsList extends Component {
   render() {
     return (
       <div>
-        <select id="years" name="years">
-          <option value="2019" selected="selected">2019</option>
+        <select id="years" name="years" defaultValue="2019">
+          <option value="2019">2019</option>
           <option value="2018">2018</option>
           <option value="2017">2017</option>
           <option value="2016">2016</option>
