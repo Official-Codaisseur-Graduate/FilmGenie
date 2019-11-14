@@ -1,7 +1,7 @@
 //page 35
 
 import React from "react";
-import TicketsSearchForm from "../../../../forms/cinemaGoer/TicketsSearchForm";
+import TicketsSearchForm from "../../../../forms/cinemaGoer/TicketsSearch";
 import TicketsResults from "../../../../forms/cinemaGoer/TicketsResults";
 import GoBackButton from "../../../../UI/GoBackButton";
 

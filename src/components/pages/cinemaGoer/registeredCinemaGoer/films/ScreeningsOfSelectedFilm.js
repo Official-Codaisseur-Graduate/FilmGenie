@@ -1,7 +1,7 @@
 //page 36
 
 import React from "react";
-import ScreeningsOfSelectedFilmForm from "../../../../forms/cinemaGoer/ScreeningsOfSelectedFilmForm";
+import ScreeningsOfSelectedFilmForm from "../../../../forms/cinemaGoer/ScreeningsOfSelectedFilm";
 import ScreeningsOfSelectedFilmLocations from "../../../../forms/cinemaGoer/ScreeningsOfSelectedFilmLocations";
 import GoBackButton from "../../../../UI/GoBackButton";
 
