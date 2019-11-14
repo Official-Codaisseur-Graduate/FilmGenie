@@ -1,35 +1,31 @@
 // page 35
-
-import React from 'react'
-
-export default class TicketsSearch extends React.Component {
+import React from "react";
+export default class TicketSearch extends React.Component {
   render() {
     return (
       <div>
+        {/* data should come from database */}
         <div>
-          <form>
-            <label> City
-              <input type='text' name='city' placeholder='City'></input>
-            </label>
-            <br />
-            <label> Cinema
-              <input type='text' name='cinema' placeholder='Cinema'></input>
-            </label>
-            <br />
-            <label> Title
-              <input type='text' name='title' placeholder='Title'></input>
-            </label>
-            <br />
-            <label> Date
-              <input type='date' name='date' placeholder='Date'></input>
-            </label>
-            <br />
-            <label> Time
-              <input type='time' name='time' placeholder='Time'></input>
-            </label>
-          </form>
+          <h5>City</h5>
+          <p>Amsterdam</p>
+        </div>
+        <div>
+          <h5>Cinema</h5>
+          <p>Pathe Munt</p>
+        </div>
+        <div>
+          <h5>Title</h5>
+          <p>Halloween</p>
+        </div>
+        <div>
+          <h5>Date</h5>
+          <p>15-11-2019</p>
+        </div>
+        <div>
+          <h5>Time</h5>
+          <p>18.30</p>
         </div>
       </div>
-    )
+    );
   }
 }
