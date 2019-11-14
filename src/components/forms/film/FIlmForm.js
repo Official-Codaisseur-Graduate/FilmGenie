@@ -1,9 +1,9 @@
 // page 40
 
 import React from 'react'
-// import CountryList from './'
-// import YearsList from './'
-// import GenreList from './'
+import CountryList from '../lists/CountryList'
+import YearsList from '../lists/YearsList'
+import GenresList from '../lists/GenresList'
 
 
 export default class FilmForm extends React.Component {
