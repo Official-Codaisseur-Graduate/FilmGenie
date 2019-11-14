@@ -19,9 +19,12 @@ class ScreeningResults extends React.Component {
         {data.map(screening => {
           return (
             <div key={screening.id}>
-              <span>{screening.title}</span>
-              <span>{screening.date}</span>
-              <span>{screening.time}</span>
+              <h5>Title</h5>
+              <p>{screening.title}</p>
+              <h5>Date</h5>
+              <p>{screening.date}</p>
+              <h5>Time</h5>
+              <p>{screening.time}</p>
               <button onClick={this.getTickets}>tickets</button>
             </div>
           );
