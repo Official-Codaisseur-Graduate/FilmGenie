@@ -2,6 +2,7 @@
 
 import React from "react";
 import ScreeningResults from "../../../../forms/cinemaGoer/ScreeningResults";
+import ScreeningsSearchForm from '../../../../forms/cinemaGoer/ScreeningsSearchForm'
 
 export default class Screenings extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class Screenings extends React.Component {
         <h4>
           <em>Screenings</em>
         </h4>
-        <div></div>
+        <div><ScreeningsSearchForm /></div>
         <div>
           <ScreeningResults />
         </div>
