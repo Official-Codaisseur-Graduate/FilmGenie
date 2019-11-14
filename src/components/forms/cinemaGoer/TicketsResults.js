@@ -1,25 +1,43 @@
 // page 35
 
-import React from 'react'
+import React from "react";
+import { withRouter } from "react-router-dom";
+import { data } from "../../../data/Tickets";
 
-export default class TicketsResults extends React.Component {
+class TicketsResults extends React.Component {
+  onSubmit = event => {
+    event.preventDefault();
+
+    // api call to create a purcahse, calculate the total amount
+
+    this.props.history.push("/cinemaGoer/Ticket");
+  };
+
   render() {
     return (
       <div>
-        {this.props.tickets.map((ticket) => {
-          return (
-            <div>
-                <div key={ticket.id}>
-                  <p>{ticket.description}</p>
-                  <p>{ticket.amount}</p>
-                  <p>{ticket.currency}</p>
-                  <p>{ticket.number}</p>
-                  <button>buy</button>
-                </div>
-            </div>
-          )
-        })}
+        <form onSubmit={this.onSubmit}>
+          {data.map(ticket => {
+            return (
+              <div key={ticket.id}>
+                <p>{ticket.description}</p>
+                <p>{ticket.amount}</p>
+                <p>{ticket.currency}</p>
+                <select name="number">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  {/* more options, maximum = tickets left */}
+                </select>
+              </div>
+            );
+          })}
+          <button>Pay tickets</button>
+        </form>
       </div>
-    )
+    );
   }
 }
+
+export default withRouter(TicketsResults);
