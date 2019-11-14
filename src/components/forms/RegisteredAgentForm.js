@@ -1,9 +1,9 @@
 // page: 14, 17, 20, 23
 
 import React, { Component } from "react";
-import { connect } from 'react-redux'
+//import { connect } from 'react-redux'
 
-class RegisteredAgentForm extends Component {
+export default class RegisteredAgentForm extends Component {
   agentType = type => {
     switch (type) {
       case "right owner":
@@ -21,7 +21,7 @@ class RegisteredAgentForm extends Component {
 
   render() {
     const { type } = this.props;
-    const nameAgent = agentType(type);
+    const nameAgent = this.agentType(type);
 
     return (
       <div>
@@ -42,12 +42,12 @@ class RegisteredAgentForm extends Component {
 }
 
 
-const mapStateToProps = (state) => ({
+// const mapStateToProps = (state) => ({
     
-})
+// })
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
     
-}
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentForm)
+// export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentForm)

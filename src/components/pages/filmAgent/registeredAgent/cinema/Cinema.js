@@ -3,6 +3,7 @@
 import React from "react";
 import ChoiceButtons from "../../../../UI/ChoiceButtons";
 import GoBackButton from "../../../../UI/GoBackButton";
+import RegisteredAgentForm from "../../../../forms/RegisteredAgentForm"
 
 export default class Cinema extends React.Component {
   agent = () => {
@@ -47,7 +48,7 @@ export default class Cinema extends React.Component {
         <div>
           <GoBackButton path="/filmAgent/registeredAgent/RegisteredFilmAgent" />
           <h3>Cinema</h3>
-          {/* here should be the form */}
+          <RegisteredAgentForm type="cinema"/>
           <ChoiceButtons choice1={choice1} choice2={choice2} />
           <ChoiceButtons choice1={choice3} choice2={choice4} />
         </div>

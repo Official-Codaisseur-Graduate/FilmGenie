@@ -6,13 +6,13 @@ import React, { Component } from "react";
 export default class RegisteredAgentAddAgentsForm extends Component {
   agentType = type => {
     switch (type) {
-      case "right owner":
+      case "right owner agents":
         return "Right owner";
-      case "film festival":
+      case "film festival agents":
         return "Festival organization";
-      case "cinema group":
+      case "cinema group agents":
         return "Cinema group";
-      case "cinema":
+      case "cinema agents":
         return "Cinema";
       default:
         return null;

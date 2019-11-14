@@ -19,7 +19,7 @@ export default class CinemaTicketTypesForm extends React.Component {
               <input type='number' name='amount' placeholder='Amount'></input>
             </label>
             <label>
-              <CurrencyList />
+              {/* <CurrencyList /> */}
             </label>
           </form>
         </div>
@@ -35,7 +35,7 @@ export default class CinemaTicketTypesForm extends React.Component {
               <input type='number' name='amount' placeholder='Amount'></input>
             </label>
             <label>
-              <CurrencyList />
+              {/* <CurrencyList /> */}
             </label>
           </form>
         </div>
