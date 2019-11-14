@@ -1,7 +1,7 @@
 // page 8
 
 import React from 'react'
-import CountryList from '../lists/CountryList'
+import CountryList from '../../forms/lists/CountryList'
 
 export default class CountryCityForm extends React.Component {
   render() {
