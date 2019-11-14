@@ -1,47 +1,76 @@
 // page 37
 
-import React from 'react'
-import CountryList from '../lists/CountryList'
-import YearsList from '../lists/YearsList'
-import GenreList from '../lists/GenresList'
+import React from "react";
+import { withRouter } from "react-router-dom";
+import CountryList from "../lists/CountryList";
+import YearsList from "../lists/YearsList";
+import GenresList from "../lists/GenresList";
 
-export default class CinemaGoerFilmsForm extends React.Component {
+class CinemaGoerFilmsForm extends React.Component {
+  handleSubmit = event => {
+    event.preventDefault();
+
+    //api call
+
+    this.props.history.push("/cinemaGoer/registeredCinemaGoer/films/ScreeningsOfSelectedFilm");
+  };
+
+  getDetails = event => {
+    event.preventDefault();
+
+    //api call
+    this.props.history.push("/Film");
+  }
+
   render() {
     return (
       <div>
         <div>
-          <form>
-            <label> Title
-              <input type='text' name='title' placeholder='Title'></input>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Title
+              <input type="text" name="title" placeholder="Title"></input>
             </label>
-            <label> Director
-              <input type='text' name='director' placeholder='Director'></input>
+            <label>
+              Director
+              <input type="text" name="director" placeholder="Director"></input>
             </label>
-            <label> Year
+            <label>
+              Year
               <YearsList />
             </label>
-            <label> Country
+            <label>
+              Country
               <CountryList />
             </label>
-            <label> Running Time
-              <input type='number' name='running_time' placeholder='Minutes'></input>
+            <label>
+              Running Time
+              <input
+                type="number"
+                name="running_time"
+                placeholder="Minutes"
+              ></input>
             </label>
             <br />
-            <label> Actors
-              <input type='text' name='actors' placeholder='Actors'></input>
+            <label>
+              Actors
+              <input type="text" name="actors" placeholder="Actors"></input>
             </label>
             <br />
-            <label> 
-              <GenreList />
+            <label>
+              <GenresList />
             </label>
-            <label> Etc.
-              <input type='text' name='etc' placeholder='Etc.'></input>
+            <label>
+              Etc.
+              <input type="text" name="etc" placeholder="Etc."></input>
             </label>
-            <button>search/filter</button>
-            <button>local trailer</button>
+            <button type="submit">search/filter</button>
+            <button onClick={this.getDetails}>Details</button>
           </form>
         </div>
       </div>
-    )
+    );
   }
 }
+
+export default withRouter(CinemaGoerFilmsForm);
