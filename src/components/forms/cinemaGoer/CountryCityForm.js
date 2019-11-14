@@ -27,7 +27,7 @@ export default class CountryCityForm extends React.Component {
             {/* Ideally, use some libraries for doing Country-state-city cascading dropdown */}
             <label>
               Country
-              <CountryList data={this.state.data} />
+              <CountryList />
             </label>
             <label>
               City
