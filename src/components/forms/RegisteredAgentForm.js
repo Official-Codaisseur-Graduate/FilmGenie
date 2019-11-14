@@ -30,7 +30,7 @@ export default class RegisteredAgentForm extends Component {
             <label htmlFor="name">{nameAgent}
               <input type="text" name="agent_type" placeholder="Name"></input>
               </label>
-            <button>details</button>
+            <button onClick={this.props.details}>details</button>
             <label htmlFor="login">Login
              <input type="text" name="fullname" placeholder="Full Name"></input>
              </label>

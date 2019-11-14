@@ -7,6 +7,7 @@ import CinemaGroupCinemasForm from "../../../../forms/cinemaGroup/CinemaGroupCin
 export default class CinemaGroupCinemas extends React.Component {
   render() {
     return (<div>
+      <h3>Cinema group cinemas</h3>
       <GoBackButton path="/filmAgent/registeredAgent/cinemaGroup/CinemaGroup" />
       <CinemaGroupCinemasForm/>
     </div>)

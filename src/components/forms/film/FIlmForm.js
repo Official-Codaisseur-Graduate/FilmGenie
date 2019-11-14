@@ -19,17 +19,17 @@ export default class FilmForm extends React.Component {
               <input type='text' name='director' placeholder='Director'></input>
             </label>
             <label> Year
-              <YearsList />
+              {/* <YearsList /> */}
             </label>
             <label> Country
-              <CountryList />
+              {/* <CountryList /> */}
             </label>
             <br />
             <label> Actors
               <input type='text' name='actors' placeholder='Actors'></input>
             </label>
             <label> 
-              <GenresList />
+              {/* <GenresList /> */}
             </label>
             <label> Running Time
               <input type='number' name='running_time' placeholder='Minutes'></input>

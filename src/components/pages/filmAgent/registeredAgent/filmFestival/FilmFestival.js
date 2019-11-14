@@ -14,6 +14,10 @@ export default class FilmFestival extends React.Component {
     this.props.history.push("/filmAgent/registeredAgent/filmFestival/FilmFestivalEditions") //page 16
   }
 
+  details = () => {
+    this.props.history.push("/filmAgent/registeredAgent/filmFestival/FilmFestivalDetails") //page 27
+  }
+
   render() {
     const choice1 = {
       name: "agents",
@@ -27,8 +31,8 @@ export default class FilmFestival extends React.Component {
       <div>
         <GoBackButton path="/filmAgent/registeredAgent/RegisteredFilmAgent" />
         <h3>Film festival</h3>
-        <RegisteredAgentForm type="film festival" />
-        <ChoiceButtons choice1={choice1} choice2={choice2} />
+        <RegisteredAgentForm type="film festival" details={this.details}/>
+        <ChoiceButtons choice1={choice1} choice2={choice2}  />
       </div>
     </div>)
   }

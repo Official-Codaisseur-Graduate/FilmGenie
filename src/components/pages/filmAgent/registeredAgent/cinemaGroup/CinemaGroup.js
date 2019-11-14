@@ -14,6 +14,10 @@ export default class CinemaGroup extends React.Component {
     this.props.history.push("/filmAgent/registeredAgent/cinemaGroup/CinemaGroupCinemas") //page 19
   }
 
+  details = () => {
+    this.props.history.push("/filmAgent/registeredAgent/cinemaGroup/CinemaGroupDetails") //page 28
+  }
+
   render() {
     const choice1 = {
       name: "agents",
@@ -27,7 +31,7 @@ export default class CinemaGroup extends React.Component {
       <div>
         <GoBackButton path="/filmAgent/registeredAgent/RegisteredFilmAgent" />
         <h3>Cinema group</h3>
-        <RegisteredAgentForm type="cinema group" />
+        <RegisteredAgentForm type="cinema group" details={this.details} />
         <ChoiceButtons choice1={choice1} choice2={choice2} />
       </div>
     </div>)

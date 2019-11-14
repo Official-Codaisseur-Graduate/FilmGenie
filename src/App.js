@@ -9,7 +9,9 @@ function App() {
       </header>
       <main>
         <div>
-          <Routes/>
+          <h1>Filmgenie.com</h1>
+          <h4>welcome to the machine</h4>
+          <Routes />
         </div>
       </main>
     </div>

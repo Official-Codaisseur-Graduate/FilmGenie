@@ -14,6 +14,10 @@ export default class RightOwner extends React.Component {
     this.props.history.push("/filmAgent/registeredAgent/rightOwner/RightOwnerFilms") //page 25
   }
 
+  details = () => {
+    this.props.history.push("/filmAgent/registeredAgent/rightOwner/RightOwnerDetails") //page 26
+  }
+
   render() {
     const choice1 = {
       name: "agents",
@@ -27,8 +31,8 @@ export default class RightOwner extends React.Component {
       <div>
         <GoBackButton path="/filmAgent/registeredAgent/RegisteredFilmAgent" />
         <h3>Right owner</h3>
-        <RegisteredAgentForm type="right owner" />
-        <ChoiceButtons choice1={choice1} choice2={choice2} />
+        <RegisteredAgentForm type="right owner" details={this.details} />
+        <ChoiceButtons choice1={choice1} choice2={choice2}  />
       </div>
     </div>)
   }

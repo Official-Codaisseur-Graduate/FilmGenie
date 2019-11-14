@@ -5,7 +5,6 @@ export default class LoginForm extends Component {
     return (
       <div>
       <form onSubmit={this.props.onSubmit}>
-        <h1>Log in</h1>
         <label><b>Email</b></label>s
         <input
           name='email'
