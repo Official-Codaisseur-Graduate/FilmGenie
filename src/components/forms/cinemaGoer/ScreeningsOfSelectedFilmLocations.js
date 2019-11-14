@@ -12,11 +12,14 @@ export default class ScreeningsOfSelectedFilmLocations extends React.Component {
           return (
             <div>
                 <div key={screening.id}>
-                  <h3>Screening</h3>
-                  <span>{screening.location}</span>
-                  <span>{screening.cinemaName}</span>
-                  <span>{screening.date}</span>
-                  <span>{screening.time}</span>
+                  <h5>Location</h5>
+                  <p>{screening.location}</p>
+                  <h5>Cinema</h5>
+                  <p>{screening.cinemaName}</p>
+                  <h5>Date</h5>
+                  <p>{screening.date}</p>
+                  <h5>Time</h5>
+                  <p>{screening.time}</p>
                   <button>tickets</button>
                 </div>
             </div>

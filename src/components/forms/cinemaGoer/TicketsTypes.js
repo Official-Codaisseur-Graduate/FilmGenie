@@ -5,7 +5,7 @@ import CurrencyList from '../components/forms/lists/CurrencyList'
 import TicketNumber from '../components/forms/lists/TicketNumber'
 import { data } from '../../../data/Tickets'
 
-export default class Tickets extends React.Component {
+export default class TicketsTypes extends React.Component {
  
   render() {
     return (
@@ -14,14 +14,15 @@ export default class Tickets extends React.Component {
           return (
             <div>
               <div key={ticket.id}>
-                <h3>Ticket type</h3>
-                <span>{ticket.description}</span>
-                <span>{ticket.amount}</span>
+                <h5>Ticket type</h5>
+                <p>{ticket.description}</p>
+                <h5>Amount</h5>
+                <p>{ticket.amount}</p>
                 <form>
-                  <label>
+                  <label> Currency
                     <CurrencyList />
                   </label>
-                  <label>
+                  <label> Number
                     <TicketNumber />
                   </label>
                 </form>
