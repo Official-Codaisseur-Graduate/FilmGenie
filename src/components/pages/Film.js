@@ -1,7 +1,7 @@
 //page 40
 
 import React from "react"
-import FilmForm from "../forms/film/FilmForm"
+import FilmForm from "../forms/film/temp"
 import GoBackButton from "../UI/GoBackButton";
 
 export default class Film extends React.Component {
