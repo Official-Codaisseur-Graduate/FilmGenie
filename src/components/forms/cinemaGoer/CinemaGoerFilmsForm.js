@@ -1,10 +1,9 @@
 // page 37
 
 import React from 'react'
-// import CountryList from './'
-// import YearsList from './'
-// import GenreList from './'
-
+import CountryList from '../lists/CountryList'
+import YearsList from '../lists/YearsList'
+import GenreList from '../lists/GenresList'
 
 export default class CinemaGoerFilmsForm extends React.Component {
   render() {
@@ -33,7 +32,7 @@ export default class CinemaGoerFilmsForm extends React.Component {
             </label>
             <br />
             <label> 
-              <GenresList />
+              <GenreList />
             </label>
             <label> Etc.
               <input type='text' name='etc' placeholder='Etc.'></input>
