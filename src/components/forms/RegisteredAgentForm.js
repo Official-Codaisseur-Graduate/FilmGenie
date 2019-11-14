@@ -27,27 +27,32 @@ export default class RegisteredAgentForm extends Component {
       <div>
         <form>
           <div>
-            <label htmlFor="name">{nameAgent}
+            <label htmlFor="name">
+              {nameAgent}
               <input type="text" name="agent_type" placeholder="Name"></input>
-              </label>
-            <button onClick={this.props.details}>details</button>
-            <label htmlFor="login">Login
-             <input type="text" name="fullname" placeholder="Full Name"></input>
-             </label>
+            </label>
+            <label htmlFor="login">
+              Login
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+              ></input>
+            </label>
           </div>
         </form>
+        <button onClick={this.props.details}>details</button>
       </div>
     );
   }
 }
 
-
 // const mapStateToProps = (state) => ({
-    
+
 // })
 
 // const mapDispatchToProps = {
-    
+
 // }
 
 // export default connect(mapStateToProps, mapDispatchToProps)(RegisteredAgentForm)
