@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 
-export class AccessControl extends Component {
+export default class AccessControl extends Component {
   render() {
     const { type } = this.props;
     return (
       <div>
         <div>
-          <h2>Filmgenie.com</h2>
           <h3>
             <em>{type}</em>
           </h3>
@@ -38,8 +37,8 @@ export class AccessControl extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
+// const mapStateToProps = state => ({});
 
-const mapDispatchToProps = {};
+// const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(AccessControl);
+// export default connect(mapStateToProps, mapDispatchToProps)(AccessControl);
