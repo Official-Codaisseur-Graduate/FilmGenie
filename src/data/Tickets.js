@@ -1,15 +1,20 @@
 export const data = [
   {
-    description: 'Normal',
-    amount: '11.00',
+    id: 1,
+    description: "Normal",
+    amount: "11.00",
+    currency: "euro"
   },
   {
-    description: 'Unlimited',
-    amount: '0.00',
+    id: 2,
+    description: "Unlimited",
+    amount: "0.00",
+    currency: "euro"
   },
   {
-    description: 'Unlimited Gold',
-    amount: '0.00',
+    id: 3,
+    description: "Unlimited Gold",
+    amount: "0.00",
+    currency: "euro"
   }
-]
-
+];
