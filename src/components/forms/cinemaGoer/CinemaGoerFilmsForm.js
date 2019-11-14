@@ -5,7 +5,6 @@ import CountryList from '../lists/CountryList'
 import YearsList from '../lists/YearsList'
 import GenreList from '../lists/GenresList'
 
-
 export default class CinemaGoerFilmsForm extends React.Component {
   render() {
     return (

@@ -1,18 +1,21 @@
 // page 32
 
 import React from 'react'
+import { data } from '../../../data/Screenings'
 
 export default class ScreeningResults extends React.Component {
+  
   render() {
     return (
       <div>
-        {this.props.screenings.map((screening) => {
+        {data.map((screening) => {
           return (
             <div>
                 <div key={screening.id}>
-                  <p>{screening.title}</p>
-                  <p>{screening.date}</p>
-                  <p>{screening.time}</p>
+                  <h3>Screening</h3>
+                  <span>{screening.title}</span>
+                  <span>{screening.date}</span>
+                  <span>{screening.time}</span>
                   <button>tickets</button>
                 </div>
             </div>
