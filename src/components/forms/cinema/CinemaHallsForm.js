@@ -1,23 +1,22 @@
 // page 30
 
 import React from 'react'
+import CinemaName from './CinemaName'
 
 export default class CinemaHallsForm extends React.Component {
   render() {
     return (
       <div>
+        <CinemaName />
         <div>
           <form>
-            <label> Cinema
-              <input type='text' name='cinema_name' placeholder='Name'></input>
-            </label>
-            <label> Hall 1
+            <label> Hall
               <input type='text' name='hall_name' placeholder='Name'></input>
             </label>
-            <label>
+            <label> Seats
               <input type='number' name='seats' placeholder='Seats'></input>
             </label>
-            <label>
+            <label> Projector ID
               <input type='text' name='projector_id' placeholder='Projector ID'></input>
             </label>
           </form>
@@ -27,13 +26,13 @@ export default class CinemaHallsForm extends React.Component {
 
         <div>
           <form>
-            <label> Hall 2
+            <label> Hall
               <input type='text' name='hall_name' placeholder='Name'></input>
             </label>
-            <label>
+            <label> Seats
               <input type='number' name='seats' placeholder='Seats'></input>
             </label>
-            <label>
+            <label> Projector ID
               <input type='text' name='projector_id' placeholder='Projector ID'></input>
             </label>
           </form>

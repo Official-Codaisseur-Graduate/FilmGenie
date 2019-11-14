@@ -1,30 +1,29 @@
 // page 22
 
 import React from 'react'
+import CinemaName from './CinemaName'
 
 export default class CinemaProgramForm extends React.Component {
   render() {
     return (
       <div>
+        <CinemaName />
         <div>
           <form>
-            <label> Cinema
-              <input type='text' name='cinema_name' placeholder='Name'></input>
-            </label>
-            <label> Screening 1
+            <label> Screening
               <input type='text' name='title' placeholder='Title'></input>
             </label>
-            <label>
-              <input type='date' name='play_date' placeholder='Play date'></input>
+            <label> Date
+              <input type='date' name='date' placeholder='Date'></input>
             </label>
-            <label>
+            <label> Time
               <input type='time' name='time' placeholder='Time'></input>
             </label>
-            <label>
+            <label> Hall
               <input type='text' name='hall' placeholder='Hall'></input>
             </label>
-            <label>
-              <input type='text' name='screening_ticket_types' placeholder='Screening ticket types'></input>
+            <label> Ticket type
+              <input type='text' name='ticket_type' placeholder='Ticket type'></input>
             </label>
           </form>
           <button>Access control</button>
@@ -34,20 +33,20 @@ export default class CinemaProgramForm extends React.Component {
 
         <div>
           <form>
-          <label> Screening 2
+          <label> Screening
               <input type='text' name='title' placeholder='Title'></input>
             </label>
-            <label>
-              <input type='date' name='play_date' placeholder='Play date'></input>
+            <label> Date
+              <input type='date' name='date' placeholder='Date'></input>
             </label>
-            <label>
+            <label> Time
               <input type='time' name='time' placeholder='Time'></input>
             </label>
-            <label>
+            <label> Hall
               <input type='text' name='hall' placeholder='Hall'></input>
             </label>
-            <label>
-              <input type='text' name='screening_ticket_types' placeholder='Screening ticket types'></input>
+            <label> Ticket type
+              <input type='text' name='ticket_type' placeholder='Ticket type'></input>
             </label>
           </form>
         </div>

@@ -1,20 +1,19 @@
 // page 19
 
 import React from 'react'
+import CinemaGroupName from './CinemaGroupName'
 
 export default class CinemaGroupCinemasForm extends React.Component {
   render() {
     return (
       <div>
+        <CinemaGroupName />
         <div>
           <form>
-            <label> Cinema group
-              <input type='text' name='cinema_group_name' placeholder='Name'></input>
-            </label>
-            <label> Cinema 1
+            <label> Cinema
               <input type='text' name='name' placeholder='Name'></input>
             </label>
-            <label>
+            <label> City
               <input type='text' name='city' placeholder='City'></input>
             </label>
           </form>
@@ -24,10 +23,10 @@ export default class CinemaGroupCinemasForm extends React.Component {
 
         <div>
           <form>
-            <label> Cinema 2
+            <label> Cinema
                 <input type='text' name='name' placeholder='Name'></input>
               </label>
-              <label>
+              <label> City
                 <input type='text' name='city' placeholder='City'></input>
               </label>
           </form>
