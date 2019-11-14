@@ -3,7 +3,7 @@
 import React from "react";
 import ScreeningsOfSelectedFilmForm from "../../../../forms/cinemaGoer/ScreeningsOfSelectedFilmForm";
 import ScreeningsOfSelectedFilmLocations from "../../../../forms/cinemaGoer/ScreeningsOfSelectedFilmLocations";
-import { GoBackButton } from "../../../../UI/GoBackButton";
+import GoBackButton from "../../../../UI/GoBackButton";
 
 export default class ScreeningsOfSelectedFilm extends React.Component {
   render() {

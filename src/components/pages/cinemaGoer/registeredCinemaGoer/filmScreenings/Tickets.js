@@ -3,7 +3,7 @@
 import React from "react";
 import TicketsSearchForm from "../../../../forms/cinemaGoer/TicketsSearchForm";
 import TicketsResults from "../../../../forms/cinemaGoer/TicketsResults";
-import { GoBackButton } from "../../../../UI/GoBackButton";
+import GoBackButton from "../../../../UI/GoBackButton";
 
 export default class Tickets extends React.Component {
   render() {

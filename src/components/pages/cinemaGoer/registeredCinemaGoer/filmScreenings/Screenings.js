@@ -3,7 +3,7 @@
 import React from "react";
 import ScreeningResults from "../../../../forms/cinemaGoer/ScreeningResults";
 import ScreeningsSearchForm from '../../../../forms/cinemaGoer/ScreeningsSearchForm'
-import { GoBackButton } from "../../../../UI/GoBackButton";
+import GoBackButton from "../../../../UI/GoBackButton";
 
 export default class Screenings extends React.Component {
   render() {

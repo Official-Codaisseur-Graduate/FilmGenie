@@ -2,7 +2,7 @@
 
 import React from "react";
 import CinemaGoerFilmsForm from '../../../../forms/cinemaGoer/CinemaGoerFilmsForm'
-import { GoBackButton } from "../../../../UI/GoBackButton";
+import GoBackButton from "../../../../UI/GoBackButton";
 
 export default class Films extends React.Component {
   render() {
