@@ -23,8 +23,6 @@ export default class CinemaProgramForm extends React.Component {
           </form>
           <button onClick={this.props.accessControl}>Access control</button>
         </div>
-
-        <button>plus_sign</button>
       </div>
     )
   }

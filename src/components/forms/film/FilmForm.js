@@ -41,7 +41,7 @@ export default class FilmForm extends React.Component {
               <input type='text' name='local_info' placeholder='Local Info'></input>
             </label>
             <label> Territory
-              {/* <CountryList /> */}
+              <CountryList />
             </label>
             <button>local trailer</button>
           </form>
