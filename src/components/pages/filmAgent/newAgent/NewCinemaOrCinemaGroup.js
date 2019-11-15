@@ -15,7 +15,7 @@ export default class NewCinemaOrCinemaGroup extends React.Component {
 
   render() {
     const choice1 = {
-      name: "I run a cinema gorup",
+      name: "I run a cinema group",
       action: this.runCinemaGroup
     };
 

@@ -16,9 +16,7 @@ class NewCinemaGoerForm extends Component {
   render() {
     return (
       <div>
-        <h4>
-          <em>New cinema-goer</em>
-        </h4>
+        <h4>New cinema-goer</h4>
         <form onSubmit={this.handleSubmit}>
           <h5>Film consumer</h5>
           <label htmlFor="fullname">Full name</label>
@@ -28,11 +26,7 @@ class NewCinemaGoerForm extends Component {
           <label htmlFor="email">E-mail address</label>
           <input type="email" name="email" placeholder="E-mail address"></input>
           <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-          ></input>
+          <input type="password" name="password" placeholder="Password"></input>
           <button type="submit">Submit</button>
         </form>
       </div>
