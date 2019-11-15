@@ -8,7 +8,7 @@ export class GoBackSideButton extends Component {
   render() {
     return (
       <div>
-        <button className="to-side-left" onClick={this.handleClick}>Go back</button>
+        <button className="button to-side-left back-button " onClick={this.handleClick}>Go back</button>
       </div>
     );
   }
