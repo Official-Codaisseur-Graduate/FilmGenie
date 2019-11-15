@@ -6,8 +6,8 @@ export default class ChoiceButtons extends Component {
     const { choice1, choice2 } = this.props;
     return (
       <div className="group-buttons">
-        <button className="to-bottom-left" onClick={choice1.action}>{choice1.name}</button>
-        <button className="to-bottom-right" onClick={choice2.action}>{choice2.name}</button>
+        <button className="button to-bottom-left" onClick={choice1.action}>{choice1.name}</button>
+        <button className="button to-bottom-right" onClick={choice2.action}>{choice2.name}</button>
       </div>
     );
   }

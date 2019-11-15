@@ -20,7 +20,7 @@ export default class RightOwnerFilmsForm extends React.Component {
             <input type='date' name='startDate' placeholder='Start date'></input>
             <label>End date</label>
             <input type='date' name='endDate' placeholder='End date'></input>
-            <button onClick={this.props.details}>details</button>
+            <button className="to-side-right" onClick={this.props.details}>details</button>
           </form>
         </div>
       </div>

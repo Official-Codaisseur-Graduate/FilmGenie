@@ -1,8 +1,8 @@
 // page 36
 
 import React from 'react'
-import CountryList from '../lists/CountryList'
-import YearsList from '../lists/YearsList'
+// import CountryList from '../lists/CountryList'
+// import YearsList from '../lists/YearsList'
 
 
 export default class ScreeningsOfSelectedFilm extends React.Component {

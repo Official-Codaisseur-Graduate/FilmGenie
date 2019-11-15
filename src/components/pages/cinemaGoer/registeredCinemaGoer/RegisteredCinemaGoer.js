@@ -2,6 +2,7 @@
 
 import React from "react";
 import LoginForm from "../../../forms/LoginForm";
+import GoBackButton from "../../../UI/GoBackButton";
 
 export default class RegisteredCinemaGoer extends React.Component {
   state = {
@@ -25,9 +26,8 @@ export default class RegisteredCinemaGoer extends React.Component {
   render() {
     return (
       <div>
-        <h4>
-          <em>Registered cinema-goer</em>
-        </h4>
+        <GoBackButton path="/cinemaGoer/CinemaGoerRegistration" />
+        <h4>Registered cinema-goer</h4>
         <LoginForm onSubmit={this.handleOnSubmit} />
         {this.state.loggedIn && <p>You are logged in!</p>}
       </div>

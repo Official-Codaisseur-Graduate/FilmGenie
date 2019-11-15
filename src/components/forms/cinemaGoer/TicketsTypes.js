@@ -25,7 +25,7 @@ export default class Tickets extends React.Component {
                     <TicketNumber />
                   </label>
                 </form>
-                <button>buy</button>
+                <button className="to-side-right">buy</button>
               </div>
             </div>
           )

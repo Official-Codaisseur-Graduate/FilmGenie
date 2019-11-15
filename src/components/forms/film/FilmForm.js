@@ -1,9 +1,9 @@
 // page 40
 
 import React from 'react'
-import CountryList from '../lists/CountryList'
-import YearsList from '../lists/YearsList'
-import GenresList from '../lists/GenresList'
+// import CountryList from '../lists/CountryList'
+// import YearsList from '../lists/YearsList'
+// import GenresList from '../lists/GenresList'
 
 
 export default class FilmForm extends React.Component {
@@ -43,7 +43,7 @@ export default class FilmForm extends React.Component {
             <label> Territory
               <CountryList />
             </label>
-            <button>local trailer</button>
+            <button className="to-side-right">local trailer</button>
           </form>
         </div>
       </div>

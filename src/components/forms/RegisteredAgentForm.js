@@ -7,13 +7,13 @@ export default class RegisteredAgentForm extends Component {
   agentType = type => {
     switch (type) {
       case "right owner":
-        return "Right owner";
+        return "Right owner name";
       case "film festival":
-        return "Festival organization";
+        return "Festival organization name";
       case "cinema group":
-        return "Cinema group";
+        return "Cinema group name";
       case "cinema":
-        return "Cinema";
+        return "Cinema name";
       default:
         return null;
     }
@@ -28,16 +28,18 @@ export default class RegisteredAgentForm extends Component {
         <form>
           <div>
             <label htmlFor="name">{nameAgent}</label>
-              <input type="text" name="agent_type" placeholder="Name"></input>
-            <label htmlFor="login">Login</label>
-              <input
+            {/* The name should be passed down to this component! We are now only displaying nameAgent */}
+          
+              {/* <input type="text" name="agent_type" placeholder="Name"></input> */}
+            {/* <label htmlFor="login">Login</label> */}
+              {/* <input
                 type="text"
                 name="fullname"
                 placeholder="Full Name"
-              ></input>
+              ></input> */}
           </div>
         </form>
-        <button onClick={this.props.details}>details</button>
+        <button className="to-side-right" onClick={this.props.details}>details</button>
       </div>
     );
   }

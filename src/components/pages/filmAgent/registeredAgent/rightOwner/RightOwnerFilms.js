@@ -1,7 +1,7 @@
 //page 25
 
 import React from "react"
-import GoBackButton from "../../../../UI/GoBackButton";
+import GoBackSideButton from "../../../../UI/GoBackSideButton";
 import RightOwnerFilmsForm from "../../../../forms/rightOwner/RightOwnerFilmsForm"
 
 export default class RightOwnerFilms extends React.Component {
@@ -22,7 +22,7 @@ export default class RightOwnerFilms extends React.Component {
   render() {
     const { films } = this.state
     return (<div>
-      <GoBackButton path="/filmAgent/registeredAgent/rightOwner/RightOwner" />
+      <GoBackSideButton path="/filmAgent/registeredAgent/rightOwner/RightOwner" />
       <h3>Right owner films</h3>
       {films.map((film,index) => {
         return <div><p>Film {index +1}</p><RightOwnerFilmsForm details={this.details}/></div>

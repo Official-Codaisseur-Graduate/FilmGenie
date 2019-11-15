@@ -20,7 +20,7 @@ export default class NewFilmAgent extends React.Component {
     };
 
     const choice2 = {
-      name: "my Screen looks for films",
+      name: "My screen looks for films",
       action: this.screenLookForFilm
     };
 
