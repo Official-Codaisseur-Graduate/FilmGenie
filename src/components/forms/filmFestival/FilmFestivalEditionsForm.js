@@ -10,7 +10,7 @@ export default class FilmFestivalEditionsForm extends React.Component {
         <FestivalOrganizationName />
         <div>
           <form>
-            <label>1st Edition</label>
+            <label>Edition</label>
             <input type='text' name='description' placeholder='Description'></input>
             <label>Start date</label>
             <input type='date' name='start_date' placeholder='Start date'></input>

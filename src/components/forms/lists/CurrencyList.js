@@ -4,7 +4,7 @@ export default class CurrencyList extends Component {
   render() {
     return (
       <div>
-        <select id="currency" name="currency">
+        <select id="currency" name="currency"  className="select">
           <option value="USD">United States Dollars</option>
           <option value="EUR" selected="selected">Euro</option>
           <option value="GBP">United Kingdom Pounds</option>
