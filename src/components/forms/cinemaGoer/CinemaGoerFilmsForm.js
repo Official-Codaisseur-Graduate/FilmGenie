@@ -27,43 +27,27 @@ class CinemaGoerFilmsForm extends React.Component {
       <div>
         <div>
           <form onSubmit={this.handleSubmit}>
-            <label>
-              Title
+            <label>Title</label>
               <input type="text" name="title" placeholder="Title"></input>
-            </label>
-            <label>
-              Director
+            <label>Director</label>
               <input type="text" name="director" placeholder="Director"></input>
-            </label>
-            <label>
-              Year
+            <label>Year
               <YearsList />
             </label>
-            <label>
-              Country
+            <label>Country
               <CountryList />
             </label>
-            <label>
-              Running Time
-              <input
-                type="number"
-                name="running_time"
-                placeholder="Minutes"
-              ></input>
-            </label>
+            <label>Running Time</label>
+              <input type="number" name="running_time" placeholder="Minutes"></input>
             <br />
-            <label>
-              Actors
+            <label>Actors</label>
               <input type="text" name="actors" placeholder="Actors"></input>
-            </label>
             <br />
-            <label>
+            <label>Genre
               <GenresList />
             </label>
-            <label>
-              Etc.
+            <label>Etc.</label>
               <input type="text" name="etc" placeholder="Etc."></input>
-            </label>
             <button type="submit">search/filter</button>
             <button onClick={this.getDetails}>Details</button>
           </form>
