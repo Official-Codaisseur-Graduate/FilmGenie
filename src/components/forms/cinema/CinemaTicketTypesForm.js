@@ -3,7 +3,7 @@
 import React from 'react'
 import CinemaName from './CinemaName'
 
-// import CurrencyList from './'
+import CurrencyList from '../lists/CurrencyList'
 
 export default class CinemaTicketTypesForm extends React.Component {
   render() {
@@ -17,13 +17,10 @@ export default class CinemaTicketTypesForm extends React.Component {
             <label>Amount</label>
               <input type='number' name='amount' placeholder='Amount'></input>
             <label>
-              {/* <CurrencyList /> */}
+              <CurrencyList />
             </label>
           </form>
         </div>
-        
-        <button>plus_sign</button>
-
       </div>
     )
   }
