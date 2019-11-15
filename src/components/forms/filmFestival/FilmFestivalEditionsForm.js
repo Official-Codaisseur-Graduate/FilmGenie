@@ -8,10 +8,10 @@ export default class FilmFestivalEditionsForm extends React.Component {
       <div>
         <div>
           <form>
-            <label> Festival organization
+            {/* <label> Festival organization
               <input type='text' name='festival_organization_name' placeholder='Name'></input>
-            </label>
-            <label> 1st Edition
+            </label> */}
+            <label>
               <input type='text' name='description' placeholder='Description'></input>
             </label>
             <label>
@@ -25,9 +25,9 @@ export default class FilmFestivalEditionsForm extends React.Component {
           </form>
         </div>
 
-        <button>plus_sign</button>
+        {/* <button>plus_sign</button> */}
 
-        <div>
+        {/* <div>
           <form>
             <label> Edition
               <input type='text' name='description' placeholder='Description'></input>
@@ -40,7 +40,7 @@ export default class FilmFestivalEditionsForm extends React.Component {
               <input type='date' name='end_date' placeholder='End date'></input>
             </label>
           </form>
-        </div>
+        </div> */}
       </div>
     )
   }
