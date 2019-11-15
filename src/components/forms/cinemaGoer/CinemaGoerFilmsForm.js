@@ -49,7 +49,7 @@ class CinemaGoerFilmsForm extends React.Component {
             <label>Etc.</label>
               <input type="text" name="etc" placeholder="Etc."></input>
             <button type="submit">search/filter</button>
-            <button onClick={this.getDetails}>Details</button>
+            <button className="to-side-right" onClick={this.getDetails}>Details</button>
           </form>
         </div>
       </div>
