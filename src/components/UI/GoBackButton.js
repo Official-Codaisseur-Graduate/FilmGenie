@@ -8,7 +8,7 @@ export class GoBackButton extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>Previous step</button>
+        <button className="to-top" onClick={this.handleClick}>Previous step</button>
       </div>
     );
   }
