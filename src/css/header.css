@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-transform: capitalize;
+  padding: 10px;
+  background: #ffc426;
+  margin-left: 2.5rem;
+}
