@@ -26,9 +26,9 @@ export default class RegisteredAgentAddAgentsForm extends Component {
     return (
       <div>
         <h4>
-          <em>{type}</em>
+          {/* <em>{type}</em> */}
         </h4>
-        <h3>{nameAgent}</h3>
+        {/* <h3>{nameAgent}</h3> */}
         <form>
           <div>
             {/* In administator there should be filled in data */}
