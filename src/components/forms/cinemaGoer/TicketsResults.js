@@ -20,9 +20,15 @@ class TicketsResults extends React.Component {
           {data.map(ticket => {
             return (
               <div key={ticket.id}>
+                <h5>Ticket type</h5>
                 <p>{ticket.description}</p>
+                <h5>Amount</h5>
                 <p>{ticket.amount}</p>
-                <p>{ticket.currency}</p>
+                <h5>Currency</h5>
+                {/* use CurrencyList */}
+                <p>{ticket.currency}</p> 
+                <h5>Number of tickets</h5>
+                {/* use TicketNumber List */}
                 <select name="number">
                   <option value="0">0</option>
                   <option value="1">1</option>

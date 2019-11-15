@@ -27,10 +27,10 @@ class NewCinemaGoerForm extends Component {
           <input type="text" name="city" placeholder="City"></input>
           <label htmlFor="email">E-mail address</label>
           <input type="email" name="email" placeholder="E-mail address"></input>
-          <label htmlFor="passoword">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
-            name="passoword"
+            name="password"
             placeholder="Password"
           ></input>
           <button type="submit">Submit</button>
