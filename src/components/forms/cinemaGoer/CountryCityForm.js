@@ -31,13 +31,13 @@ export default class CountryCityForm extends React.Component {
             </label>
             <label>
               City
-              <input
-                type="text"
-                name="city"
-                placeholder="City"
-                onChange={this.handleOnChange}
-              ></input>
             </label>
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              onChange={this.handleOnChange}
+            ></input>
             <button type="submit">Confirm</button>
           </form>
         </div>

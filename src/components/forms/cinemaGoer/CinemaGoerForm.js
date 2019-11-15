@@ -6,32 +6,18 @@ export default class CinemaGoerForm extends React.Component {
   render() {
     return (
       <div>
+        {/* data should come from database */}
         <div>
-          <form>
-            <label> 
-              <input type='text' name='fullname' placeholder='Full Name'></input>
-            </label>
-            <br />
-            <label> 
-              <input type='text' name='firstname' placeholder='First Name'></input>
-            </label>
-            <br />
-            <label>
-              <input type='text' name='lastname' placeholder='Last Name'></input>
-            </label>
-            <br />
-            <label>
-              <input type='text' name='City' placeholder='City'></input>
-            </label>
-            <br />
-            <label>
-              <input type='text' name='email' placeholder='E-mail address'></input>
-            </label>
-            <br />
-            <label>
-              <input type='text' name='password' placeholder='Password'></input>
-            </label>
-          </form>
+          <h5>First name</h5>
+          <p>Rein</p>
+        </div>
+        <div>
+          <h5>Last name</h5>
+          <p>Op 't Land</p>
+        </div>
+        <div>
+          <h5>City</h5>
+          <p>Amsterdam</p>
         </div>
       </div>
     )

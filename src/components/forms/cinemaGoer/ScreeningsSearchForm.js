@@ -6,24 +6,22 @@ export default class ScreeningsSearchForm extends React.Component {
   render() {
     return (
       <div>
+        {/* data should come from database */}
         <div>
-          <form>
-            <label> City
-              <input type='text' name='city' placeholder='City'></input>
-            </label>
-            <br />
-            <label> Cinema
-              <input type='text' name='cinema' placeholder='Cinema'></input>
-            </label>
-            <br />
-            <label> Date
-              <input type='date' name='date' placeholder='Date'></input>
-            </label>
-            <br />
-            <label> Film Festival
-              <input type='text' name='festival' placeholder='Name'></input>
-            </label>
-          </form>
+          <h5>City</h5>
+          <p>Amsterdam</p>
+        </div>
+        <div>
+          <h5>Cinema</h5>
+          <p>Pathe Munt</p>
+        </div>
+        <div>
+          <h5>Date</h5>
+          <p>15-11-2019</p>
+        </div>
+        <div>
+          <h5>Film Festival</h5>
+          <p>Film Genie Festival</p>
         </div>
       </div>
     )
