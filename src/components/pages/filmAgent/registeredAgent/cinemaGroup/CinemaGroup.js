@@ -2,6 +2,8 @@
 
 import React from "react"
 import ChoiceButtons from "../../../../UI/ChoiceButtons";
+import GoBackButton from "../../../../UI/GoBackButton";
+import RegisteredAgentForm from "../../../../forms/RegisteredAgentForm"
 
 export default class CinemaGroup extends React.Component {
   agents = () => {
@@ -10,6 +12,10 @@ export default class CinemaGroup extends React.Component {
 
   cinemas = () => {
     this.props.history.push("/filmAgent/registeredAgent/cinemaGroup/CinemaGroupCinemas") //page 19
+  }
+
+  details = () => {
+    this.props.history.push("/filmAgent/registeredAgent/cinemaGroup/CinemaGroupDetails") //page 28
   }
 
   render() {
@@ -23,10 +29,9 @@ export default class CinemaGroup extends React.Component {
     };
     return (<div>
       <div>
+        <GoBackButton path="/filmAgent/registeredAgent/RegisteredFilmAgent" />
         <h3>Cinema group</h3>
-
-        {/* Here will come a form */}
-
+        <RegisteredAgentForm type="cinema group" details={this.details} />
         <ChoiceButtons choice1={choice1} choice2={choice2} />
       </div>
     </div>)

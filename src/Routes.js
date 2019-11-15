@@ -7,7 +7,7 @@ import Film from './components/pages/Film'
 
 // pages/filmAgent
 import FilmAgentRegistration from './components/pages/filmAgent/FilmAgentRegistration'
-import AccessControl from './components/pages/filmAgent/AccessControl'
+import AccessControlContainer from './components/pages/filmAgent/AccessControlContainer'
 // pages/filmAgent/newAgent
 import NewCinema from './components/pages/filmAgent/newAgent/NewCinema'
 import NewCinemaGroup from './components/pages/filmAgent/newAgent/NewCinemaGroup'
@@ -105,7 +105,7 @@ function Routes() {
     <Route path="/cinemaGoer/registeredCinemaGoer/filmScreenings/Tickets" exact component={Tickets} />
     <Route path="/cinemaGoer/registeredCinemaGoer/films/ScreeningsOfSelectedFilm" exact component={ScreeningsOfSelectedFilm} />
     <Route path="/cinemaGoer/registeredCinemaGoer/films/Films" exact component={Films} />
-    <Route path="/filmAgent/AccessControl" exact component={AccessControl} />
+    <Route path="/filmAgent/AccessControlContainer" exact component={AccessControlContainer} />
     <Route path="/cinemaGoer/Ticket" exact component={Ticket} />
     <Route path="/Film" exact component={Film} />
   </div>);

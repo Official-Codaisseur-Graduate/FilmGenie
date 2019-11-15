@@ -6,13 +6,13 @@ import React, { Component } from "react";
 export default class RegisteredAgentAddAgentsForm extends Component {
   agentType = type => {
     switch (type) {
-      case "right owner":
+      case "right owner agents":
         return "Right owner";
-      case "film festival":
+      case "film festival agents":
         return "Festival organization";
-      case "cinema group":
+      case "cinema group agents":
         return "Cinema group";
-      case "cinema":
+      case "cinema agents":
         return "Cinema";
       default:
         return null;
@@ -32,54 +32,53 @@ export default class RegisteredAgentAddAgentsForm extends Component {
           <div>
             {/* In administator there should be filled in data */}
             <label htmlFor="name">{nameAgent}</label>
-
-            <input type="text" name="agent_type" placeholder="Name"></input>
+              <input type="text" name="agent_type" placeholder="Name"></input>
             <label htmlFor="administrator">Administrator</label>
-            <input type="text" name="full_name" placeholder="Full Name"></input>
-            <label htmlFor="firstname"></label>
-            <input
-              type="text"
-              name="firstname"
-              placeholder="First Name"
+              <input type="text" name="full_name" placeholder="Full name"></input>
+            <label htmlFor="firstname">First name</label>
+             <input
+                type="text"
+                name="firstname"
+                placeholder="First name"
             ></input>
-            <label htmlFor="lastname"></label>
-            <input type="text" name="lastname" placeholder="Last Name"></input>
-            <label htmlFor="job"></label>
-            <input type="text" name="job" placeholder="Job"></input>
+            <label htmlFor="lastname">Last name</label>
+             <input type="text" name="lastname" placeholder="Last name"></input>
+            <label htmlFor="job">Job</label>
+             <input type="text" name="job" placeholder="Job"></input>
           </div>
 
           <button>plus_sign</button>
 
           <div>
             <label htmlFor="editor">Editor</label>
-            <input type="text" name="full_name" placeholder="Full Name"></input>
-            <label htmlFor="firstname"></label>
-            <input
-              type="text"
-              name="firstname"
-              placeholder="First Name"
-            ></input>
-            <label htmlFor="lastname"></label>
-            <input type="text" name="lastname" placeholder="Last Name"></input>
-            <label htmlFor="job"></label>
-            <input type="text" name="job" placeholder="Job"></input>
+              <input type="text" name="full_name" placeholder="Full name"></input>
+            <label htmlFor="firstname">First name</label>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="First name"
+              ></input>
+            <label htmlFor="lastname">Last name</label>
+             <input type="text" name="lastname" placeholder="Last name"></input>
+            <label htmlFor="job">Job</label>
+              <input type="text" name="job" placeholder="Job"></input>
           </div>
 
           <button>plus_sign</button>
 
           <div>
             <label htmlFor="editor">Reader</label>
-            <input type="text" name="full_name" placeholder="Full Name"></input>
-            <label htmlFor="firstname"></label>
-            <input
-              type="text"
-              name="firstname"
-              placeholder="First Name"
-            ></input>
-            <label htmlFor="lastname"></label>
-            <input type="text" name="lastname" placeholder="Last Name"></input>
-            <label htmlFor="job"></label>
-            <input type="text" name="job" placeholder="Job"></input>
+              <input type="text" name="full_name" placeholder="Full name"></input>
+            <label htmlFor="firstname">First name</label>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="First name"
+              ></input>
+            <label htmlFor="lastname">Last name</label>
+             <input type="text" name="lastname" placeholder="Last name"></input>
+            <label htmlFor="job">Job</label>
+              <input type="text" name="job" placeholder="Job"></input>
           </div>
         </form>
       </div>
