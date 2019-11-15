@@ -9,7 +9,7 @@ function App() {
       <header className="header">
         <div className="title">
           <h1>Filmgenie.com</h1>
-          <h4>welcome to the machine</h4>
+          <p>Welcome to the machine</p>
         </div>
       </header>
       <main>

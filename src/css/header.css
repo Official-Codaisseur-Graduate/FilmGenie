@@ -1,11 +1,15 @@
 .header {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
 }
 
 .title {
   text-transform: capitalize;
-  padding: 10px;
+  padding: 1rem 2rem;
   background: #ffc426;
   margin-left: 2.5rem;
+}
+
+.title h1 {
+  font-family: 'Raleway', sans-serif;
 }
