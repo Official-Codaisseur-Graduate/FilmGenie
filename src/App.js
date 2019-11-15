@@ -6,13 +6,14 @@ import Routes from "./Routes";
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header className="header">
+        <div className="title">
+          <h1>Filmgenie.com</h1>
+          <p>Welcome to the machine</p>
+        </div>
+      </header>
       <main>
         <div>
-          <div className="header">
-            <h1>Filmgenie.com</h1>
-            <h4>welcome to the machine</h4>
-          </div>
           <div className="container">
             <Routes />
           </div>
