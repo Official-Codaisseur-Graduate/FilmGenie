@@ -20,7 +20,7 @@ export default class Start extends React.Component {
      action: this.cinemaGoer
    }
    return (
-     <div className="container">
+     <div>
        <ChoiceButtons choice1={choice1} choice2={choice2} />
      </div>
    );
