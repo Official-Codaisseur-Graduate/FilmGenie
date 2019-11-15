@@ -5,7 +5,7 @@ export default class CountryList extends Component {
         return (
             //This is downloaded as code learning example, may or may not be a full or correct list.
             <div>        
-                <select id="country" name="country">
+                <select id="country" name="country" className="select">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
                     <option value="Albania">Albania</option>
