@@ -25,7 +25,7 @@ class ScreeningResults extends React.Component {
               <p>{screening.date}</p>
               <h5>Time</h5>
               <p>{screening.time}</p>
-              <button onClick={this.getTickets}>tickets</button>
+              <button className="to-side-right" onClick={this.getTickets}>tickets</button>
             </div>
           );
         })}

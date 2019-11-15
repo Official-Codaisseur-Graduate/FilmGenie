@@ -3,13 +3,13 @@
 import React from "react";
 import TicketsSearchForm from "../../../../forms/cinemaGoer/TicketsSearch";
 import TicketsResults from "../../../../forms/cinemaGoer/TicketsResults";
-import GoBackButton from "../../../../UI/GoBackButton";
+import GoBackSideButton from "../../../../UI/GoBackSideButton";
 
 export default class Tickets extends React.Component {
   render() {
     return (
       <div>
-        <GoBackButton path="/cinemaGoer/registeredCinemaGoer/filmScreenings/Screenings" />
+        <GoBackSideButton path="/cinemaGoer/registeredCinemaGoer/filmScreenings/Screenings" />
         <div>
           <TicketsSearchForm />
         </div>

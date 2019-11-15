@@ -39,7 +39,7 @@ class TicketsResults extends React.Component {
               </div>
             );
           })}
-          <button>Pay tickets</button>
+          <button className="to-side-right">Pay tickets</button>
         </form>
       </div>
     );

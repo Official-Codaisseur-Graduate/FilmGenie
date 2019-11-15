@@ -2,12 +2,12 @@
 
 import React from "react"
 import RegisteredAgentDetailsForm from "../../../../forms/RegisteredAgentDetailsForm"
-import GoBackButton from "../../../../UI/GoBackButton";
+import GoBackSideButton from "../../../../UI/GoBackSideButton";
 
 export default class CinemaDetails extends React.Component {
   render() {
     return (<div>
-      <GoBackButton path="/filmAgent/registeredAgent/cinema/Cinema" />
+      <GoBackSideButton path="/filmAgent/registeredAgent/cinema/Cinema" />
       <RegisteredAgentDetailsForm type="cinema" />
     </div>)
   }
