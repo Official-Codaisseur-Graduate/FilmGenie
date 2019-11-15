@@ -4,7 +4,7 @@ export default class TicketNumber extends Component {
   render() {
     return (
       <div>
-        <select id="ticket-number" name="ticket-number">
+        <select id="ticket-number" name="ticket-number" className="select">
           <option value='1'>1</option>
           <option value='2'>2</option>
           <option value='3'>3</option>
