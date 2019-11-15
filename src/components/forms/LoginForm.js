@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { GoBackButton } from "../UI/GoBackButton";
 
 export default class LoginForm extends Component {
   render() {
