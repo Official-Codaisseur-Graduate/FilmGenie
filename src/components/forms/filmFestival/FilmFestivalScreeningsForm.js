@@ -21,7 +21,7 @@ export default class FilmFestivalScreeningsForm extends React.Component {
             <input type='date' name='cinema_hall' placeholder='Cinema hall'></input>
             <label>Ticket type</label>
             <input type='date' name='ticket_type' placeholder='Ticket type'></input>
-            <button onClick={this.props.screenings}>Access Control</button>
+            <button className="to-side-right" onClick={this.props.accessControl}>Access Control</button>
           </form>
         </div>
       </div>

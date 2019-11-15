@@ -2,6 +2,7 @@
 
 import React from "react"
 import GoBackButton from "../../../../UI/GoBackButton";
+import FilmFestivalScreeningsForm from "../../../../forms/filmFestival/FilmFestivalScreeningsForm"
 
 export default class FilmFestivalScreenings extends React.Component {
   accessControl = () => {
@@ -11,7 +12,7 @@ export default class FilmFestivalScreenings extends React.Component {
   render() {
     return (<div>
       <GoBackButton path="/filmAgent/registeredAgent/filmFestival/FilmFestivalEditions"/>
-    {/* <form accessControl={this.accessControl}/> */}
+      <FilmFestivalScreeningsForm accessControl={this.accessControl}/> 
     </div>)
   }
 } 

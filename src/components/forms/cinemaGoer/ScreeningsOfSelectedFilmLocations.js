@@ -27,7 +27,7 @@ class ScreeningsOfSelectedFilmLocations extends React.Component {
               <span>{screening.date}</span>
               <h5>Time</h5>
               <span>{screening.time}</span>
-              <button onClick={this.getTickets}>tickets</button>
+              <button className="to-side-right" onClick={this.getTickets}>tickets</button>
             </div>
           );
         })}

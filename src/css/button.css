@@ -144,3 +144,53 @@ button:hover {
   border: none;
   background: none;
 }
+
+.to-bottom-right:hover:before{
+	transform: rotate(360deg);
+}
+
+.to-side-right:before{
+	content:'▶';
+	font-size:1.5em;
+    position:absolute;
+    bottom: -2em;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-side-right:hover{
+	color:rgb(255, 196, 38);
+	border-color: rgb(255, 196, 38);
+}
+.to-side-right:hover:before{
+	transform: rotate(360deg);
+}
+
+.to-side-left:before{
+	content:'◀';
+	font-size:1.5em;
+    position:absolute;
+    bottom: -2em;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-side-left:hover{
+	color:rgb(255, 196, 38);
+	border-color: rgb(255, 196, 38);
+}
+.to-side-left:hover:before{
+	transform: rotate(360deg);
+}
