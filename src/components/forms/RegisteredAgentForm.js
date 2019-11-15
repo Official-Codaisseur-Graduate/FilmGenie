@@ -28,6 +28,8 @@ export default class RegisteredAgentForm extends Component {
         <form>
           <div>
             <label htmlFor="name">{nameAgent}</label>
+            {/* The name should be passed down to this component! We are now only displaying nameAgent */}
+          
               {/* <input type="text" name="agent_type" placeholder="Name"></input> */}
             {/* <label htmlFor="login">Login</label> */}
               {/* <input
