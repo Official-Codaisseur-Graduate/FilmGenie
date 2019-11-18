@@ -2,12 +2,17 @@
 
 ### Intro / Project Overview
 FilmGenie is a film rights management application that aims to connect (independent) film producers and rights owners directly to cinemas, movie festivals, as well as individuals.
+
 When a cinema or festival wants to play a movie, FilmGenie makes sure this is possible through its extensive database that is built by collecting information from different film agents.
+
 A film agent is someone who represents one or more existing films and seeks an audience. This can be a direct or indirect right owner, a film festival or a cinema (group).
+
 The app will have two types of users that will be able to create an account and enter different type of data:
 1. Film agent (Right Owner/Producer/Distributor/Cinema/Cinema Group/Film Festival)
 2. Cinema go-er
+
 FilmGenie will function in partnership with [FilmFetch](https://filmfetch.net), a digital mode of transport that is specifically aimed at sending DCP films over the internet. Once the request is done onFilm Genie, FilmFetch will take care of the delivery of the movie files.
+
 Our application will use KDMs (Key Delivery Message) in order to efficiently target one playback device that gets one version of the movie to play on for a limited duration, which could be hours, weeks, or months. Read more about KDM [here](https://cinepedia.com/security/key-delivery-message/).
 
 
