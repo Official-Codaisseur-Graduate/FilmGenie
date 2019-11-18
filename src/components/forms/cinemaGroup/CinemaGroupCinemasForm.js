@@ -16,9 +16,6 @@ export default class CinemaGroupCinemasForm extends React.Component {
               <input type='text' name='city' placeholder='City'></input>
           </form>
         </div>
-
-        <button>plus_sign</button>
-
       </div>
     )
   }

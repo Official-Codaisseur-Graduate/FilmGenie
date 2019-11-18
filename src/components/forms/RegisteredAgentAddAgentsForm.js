@@ -26,15 +26,14 @@ export default class RegisteredAgentAddAgentsForm extends Component {
     return (
       <div>
         <h4>
-          <em>{type}</em>
+          {/* <em>{type}</em> */}
         </h4>
+        {/* <h3>{nameAgent}</h3> */}
         <form>
           <div>
             {/* In administator there should be filled in data */}
-            <label htmlFor="name">{nameAgent}</label>
-              <input type="text" name="agent_type" placeholder="Name"></input>
             <label htmlFor="administrator">Administrator</label>
-              <input type="text" name="full_name" placeholder="Full name"></input>
+              <input type="text" name="fullname" placeholder="Full name"></input>
             <label htmlFor="firstname">First name</label>
              <input
                 type="text"
@@ -46,12 +45,9 @@ export default class RegisteredAgentAddAgentsForm extends Component {
             <label htmlFor="job">Job</label>
              <input type="text" name="job" placeholder="Job"></input>
           </div>
-
-          <button>plus_sign</button>
-
-          <div>
+          {/* <div>
             <label htmlFor="editor">Editor</label>
-              <input type="text" name="full_name" placeholder="Full name"></input>
+              <input type="text" name="fullname" placeholder="Full name"></input>
             <label htmlFor="firstname">First name</label>
               <input
                 type="text"
@@ -63,12 +59,9 @@ export default class RegisteredAgentAddAgentsForm extends Component {
             <label htmlFor="job">Job</label>
               <input type="text" name="job" placeholder="Job"></input>
           </div>
-
-          <button>plus_sign</button>
-
           <div>
             <label htmlFor="editor">Reader</label>
-              <input type="text" name="full_name" placeholder="Full name"></input>
+              <input type="text" name="fullname" placeholder="Full name"></input>
             <label htmlFor="firstname">First name</label>
               <input
                 type="text"
@@ -79,7 +72,7 @@ export default class RegisteredAgentAddAgentsForm extends Component {
              <input type="text" name="lastname" placeholder="Last name"></input>
             <label htmlFor="job">Job</label>
               <input type="text" name="job" placeholder="Job"></input>
-          </div>
+          </div> */}
         </form>
       </div>
     );

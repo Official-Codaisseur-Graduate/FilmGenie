@@ -13,9 +13,9 @@ export default class FilmFestivalEditionsForm extends React.Component {
             <label>Edition</label>
             <input type='text' name='description' placeholder='Description'></input>
             <label>Start date</label>
-            <input type='date' name='start_date' placeholder='Start date'></input>
+            <input type='date' name='startdate' placeholder='Start date'></input>
             <label>End date</label>
-            <input type='date' name='end_date' placeholder='End date'></input>
+            <input type='date' name='enddate' placeholder='End date'></input>
             <button className="to-side-right" onClick={this.props.screenings}>screenings</button>
           </form>
         </div>
