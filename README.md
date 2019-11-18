@@ -54,7 +54,7 @@ Physical documents (actual paper document and powerpoint file)
 - A right owner first signs up. (http://localhost:3000/filmAgent/newAgent/NewRightOwner)
 - Then the right owner logs in and is directed to the right owner page in stead of having to click a separate button for this. (maybe skip this step for now because there is no authentication process right now, talk to Jeroen and Peter Severens about this) (http://localhost:3000/filmAgent/registeredAgent/rightOwner/RightOwner)
 - When the right owner clicks 'details' it should show a page where information is already filled in (from the signup form) and the right owner is able to change and save this information. (http://localhost:3000/filmAgent/registeredAgent/rightOwner/RightOwnerDetails)
-- When a right owner clicks 'agents' it should show a page where you can add Administrators, Editors and Readers. The first administrator should be the right owner and it should already be filled in (Administrator). http://localhost:3000/filmAgent/registeredAgent/rightOwner/RightOwnerAgents
+- When a right owner clicks 'agents' it should show a page where you can add Administrators, Editors and Readers. The first administrator should be the right owner and it should already be filled in (Administrator). (http://localhost:3000/filmAgent/registeredAgent/rightOwner/RightOwnerAgents)
 - When a right owner clicks 'films' it should show a page where his films are displayed. Films can be added and edited. (http://localhost:3000/filmAgent/registeredAgent/rightOwner/RightOwnerFilms)
 - After filling in de IMDB Number the 'details' button can be clicked to retrieve data from IMDB.com. (http://localhost:3000/Film) 
 - Talk to the project owner to make sure what he wants to do with the other fields. 
