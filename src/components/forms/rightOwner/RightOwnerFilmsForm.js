@@ -2,7 +2,9 @@
 
 import React from "react";
 import RightOwnerName from "./RightOwnerName";
+
 //import loadFilms from "";
+
 
 export default class RightOwnerFilmsForm extends React.Component {
   handleClick = () => {
@@ -14,15 +16,29 @@ export default class RightOwnerFilmsForm extends React.Component {
         <RightOwnerName />
         <div>
           <form>
+
             {/*  <label>Title</label>
             <input type='text' name='title' placeholder='Title'></input>
+
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Title"></input>
+
             <label>IMDB Number</label>
-            <input type='text' name='imdbNumber' placeholder='IMDB Number'></input>
+            <input
+              type="text"
+              name="imdbNumber"
+              placeholder="IMDB Number"
+            ></input>
             <label>Territory</label>
-            <input type='text' name='territory' placeholder='Territory'></input>
+            <input type="text" name="territory" placeholder="Territory"></input>
             <label>Start date</label>
-            <input type='date' name='startDate' placeholder='Start date'></input>
+            <input
+              type="date"
+              name="startDate"
+              placeholder="Start date"
+            ></input>
             <label>End date</label>
+
             <input type='date' name='endDate' placeholder='End date'></input>
             <button className="to-side-right" onClick={this.props.details}>details</button>
  */}
@@ -33,6 +49,8 @@ export default class RightOwnerFilmsForm extends React.Component {
               placeholder="Enter film Name"
             ></input>
             <button onClick={() => this.handleClick()}>Search Films</button>
+
+
           </form>
         </div>
       </div>
