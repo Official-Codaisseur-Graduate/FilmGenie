@@ -5,7 +5,6 @@ import RightOwnerName from "./RightOwnerName";
 
 //import loadFilms from "";
 
-
 export default class RightOwnerFilmsForm extends React.Component {
   handleClick = () => {
     //loadFilms();
@@ -15,8 +14,7 @@ export default class RightOwnerFilmsForm extends React.Component {
       <div>
         <RightOwnerName />
         <div>
-          <form>
-
+          <form onSubmit={this.props.handleSubmit}>
             {/*  <label>Title</label>
             <input type='text' name='title' placeholder='Title'></input>
 
@@ -45,12 +43,11 @@ export default class RightOwnerFilmsForm extends React.Component {
 
             <input
               type="text"
-              name="film"
+              name="filmName"
               placeholder="Enter film Name"
+              onChange={this.props.handleChange}
             ></input>
-            <button onClick={() => this.handleClick()}>Search Films</button>
-
-
+            <button type="submit">Search Films</button>
           </form>
         </div>
       </div>
