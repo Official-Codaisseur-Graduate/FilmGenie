@@ -2,21 +2,28 @@
 
 import React from "react";
 import RightOwnerName from "./RightOwnerName";
+import { connect } from "react-redux";
+import { loadFilms } from "../../../actions/fetchFilmDetails";
 
-//import loadFilms from "";
-
-
-export default class RightOwnerFilmsForm extends React.Component {
-  handleClick = () => {
-    //loadFilms();
+class RightOwnerFilmsForm extends React.Component {
+  state = {
+    filmName: ""
+  };
+  handleClick = event => {
+    event.preventDefault();
+    console.log("testing: ", this.state.filmName);
+    this.props.loadFilms(this.state.filmName);
+  };
+  onChange = event => {
+    console.log(event.target.value);
+    this.setState({ [event.target.name]: event.target.value });
   };
   render() {
     return (
       <div>
         <RightOwnerName />
         <div>
-          <form>
-
+          <form onSubmit={this.handleClick}>
             {/*  <label>Title</label>
             <input type='text' name='title' placeholder='Title'></input>
 
@@ -45,15 +52,16 @@ export default class RightOwnerFilmsForm extends React.Component {
 
             <input
               type="text"
-              name="film"
+              name="filmName"
               placeholder="Enter film Name"
+              onChange={event => this.onChange(event)}
             ></input>
-            <button onClick={() => this.handleClick()}>Search Films</button>
-
-
+            <button type="submit">Search Films</button>
           </form>
         </div>
       </div>
     );
   }
 }
+
+export default connect(null, { loadFilms })(RightOwnerFilmsForm);
