@@ -6,6 +6,7 @@ import RightOwnerFilmsForm from "../../../../forms/rightOwner/RightOwnerFilmsFor
 import superagent from "superagent";
 import { loadFilms } from "../../../../../actions/fetchFilmDetails";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 export class RightOwnerFilms extends React.Component {
   state = {
@@ -82,7 +83,9 @@ export class RightOwnerFilms extends React.Component {
         </div>
         <ul></ul>
         {this.props.films.map(film => (
-          <li>{film.primaryTitle}</li>
+          <Link to={`/rightOwner/${1}/films/${film.filmid}/add`}>
+            <li>{film.primaryTitle}</li>
+          </Link>
         ))}
       </div>
     );
