@@ -14,7 +14,7 @@ export default class RightOwnerAgents extends React.Component {
   };
 
   componentDidMount() {
-    function makeRequest() {
+    /* function makeRequest() {
       return fetch(
         "http://filmgenie.com/api/FilmGenie//GetRightownerAgentById?rightownerid=2"
       ).then(function(response) {
@@ -33,7 +33,7 @@ export default class RightOwnerAgents extends React.Component {
     });
     fetch(
       "http://filmgenie.com/api/FilmGenie//GetRightownerAgentById?rightownerid=2"
-    );
+    ); */
   }
 
   addAdministrator = () => {
