@@ -10,13 +10,10 @@ const filmsFetched = films => ({
 const baseUrl = "filmgenie.com/api/filmgenie/getfilmsbyname";
 
 export const loadFilms = filmName => (dispatch, getState) => {
-
   //if (getState().films) return;
   const url = `http://${baseUrl}?name=${filmName}`;
   console.log("URL: ", url);
-  request
-    .get(url)
-
+  request.get(url);
 
   console.log("in loadfilms", filmName);
   //if (getState().films) return;
@@ -80,16 +77,15 @@ export const loadFilms = filmName => (dispatch, getState) => {
     .then(
       res => {
         /* responded in time */
-      },
-      err => {
-        if (err.timeout) {
-          /* timed out! */
-        } else {
-          /* other error */
-        }
-      }
-    );
+  //   },
+  //   err => {
+  //     if (err.timeout) {
+  //       /* timed out! */
+  //     } else {
+  //       /* other error */
+  //     }
+  //   }
+  // );
 
-    .catch(console.error); */
-
+  // .catch(console.error); */
 };

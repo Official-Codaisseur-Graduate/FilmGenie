@@ -6,15 +6,12 @@ import { connect } from "react-redux";
 import { loadFilms } from "../../../actions/fetchFilmDetails";
 
 export default class RightOwnerFilmsForm extends React.Component {
-
   render() {
     return (
       <div>
         <RightOwnerName />
         <div>
-
           <form onSubmit={this.props.handleSubmit}>
-
             {/*  <label>Title</label>
             <input type='text' name='title' placeholder='Title'></input>
 
@@ -45,10 +42,9 @@ export default class RightOwnerFilmsForm extends React.Component {
               type="text"
               name="filmName"
               placeholder="Enter film Name"
-
-              onChange={this.props.handleChange}     
+              onChange={this.props.handleChange}
             ></input>
-      
+
             <button type="submit">Search Films</button>
           </form>
         </div>
@@ -56,5 +52,3 @@ export default class RightOwnerFilmsForm extends React.Component {
     );
   }
 }
-
-export default connect(null, { loadFilms })(RightOwnerFilmsForm);
