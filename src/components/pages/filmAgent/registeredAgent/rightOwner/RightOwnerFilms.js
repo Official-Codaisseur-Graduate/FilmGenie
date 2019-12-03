@@ -22,11 +22,11 @@ export class RightOwnerFilms extends React.Component {
   };
 
   // This button should add the IMDB number of the selected film to redux state, which can be retrieved in the FilmForm component.
-  // details = () => {
-  //   console.log("This props history ", this.props.history);
-  //   console.log();
-  //   this.props.history.push("/Film"); //page 40
-  // };
+  details = () => {
+    console.log("This props history ", this.props.history);
+    console.log();
+    this.props.history.push("/Film"); //page 40
+  };
 
   handleChange = event => {
     this.setState({
