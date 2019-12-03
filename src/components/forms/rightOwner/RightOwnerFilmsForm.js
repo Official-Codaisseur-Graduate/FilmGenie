@@ -2,8 +2,6 @@
 
 import React from "react";
 import RightOwnerName from "./RightOwnerName";
-import { connect } from "react-redux";
-import { loadFilms } from "../../../actions/fetchFilmDetails";
 
 export default class RightOwnerFilmsForm extends React.Component {
   render() {

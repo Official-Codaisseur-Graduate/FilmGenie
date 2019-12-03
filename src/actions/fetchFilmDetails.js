@@ -60,10 +60,12 @@ export const loadFilms = filmName => (dispatch, getState) => {
     }
   );
 
-  makeRequest().then(function(data) {
-    console.log("got data", data);
-    filmsFetched(data);
-  });
+  makeRequest().then(data => dispatch(filmsFetched(data)));
+
+  //   .then(function(data) {
+  //     console.log("got data", data);
+  //     filmsFetched(data);
+  //   });
 
   fetch("http://filmgenie.com/api/FilmGenie/GetFilmsByName?name=test");
 

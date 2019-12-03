@@ -9,15 +9,15 @@ import { connect } from "react-redux";
 
 export class RightOwnerFilms extends React.Component {
   state = {
-    // films: [
-    //   {
-    //     title: null,
-    //     imdbNumber: 7662752,
-    //     territory: null,
-    //     startDate: null,
-    //     endDate: null
-    //   }
-    // ],
+    films: [
+      {
+        title: null,
+        imdbNumber: 7662752,
+        territory: null,
+        startDate: null,
+        endDate: null
+      }
+    ],
     filmName: ""
   };
 
@@ -39,7 +39,7 @@ export class RightOwnerFilms extends React.Component {
 
     this.setState({ startDate: Number(this.state.startDate) });
     console.log("NEW FILM STATE: ", this.state);
-    this.props.loadFilms(this.state.filmName);
+    this.props.loadFilms(this.state);
 
     this.setState({
       filmName: " "
@@ -62,17 +62,15 @@ export class RightOwnerFilms extends React.Component {
   // };
 
   render() {
-    // const { films } = this.state;
+    console.log("props films: ", this.props.films);
+
     return (
       <div>
         <GoBackSideButton path="/filmAgent/registeredAgent/rightOwner/RightOwner" />
         <h3>Right owner films</h3>
-        {/* {films.map((film, index) => {
-          console.log("FILM: ", film); */}
         return (
         <div>
           <div>
-            {/* <p>Film {index + 1}</p> */}
             <button className="to-side-right" onClick={this.details}>
               details
             </button>
@@ -82,15 +80,17 @@ export class RightOwnerFilms extends React.Component {
             handleChange={this.handleChange}
           />
         </div>
-        ); })}
-        {/* <button onClick={this.addFilm}> ADD FILM</button> */}
+        <ul></ul>
+        {this.props.films.map(film => (
+          <li>{film.primaryTitle}</li>
+        ))}
       </div>
     );
   }
 }
 function mapStateToProps(reduxState) {
   return {
-    foundFilms: reduxState.films
+    films: reduxState.films
   };
 }
 
