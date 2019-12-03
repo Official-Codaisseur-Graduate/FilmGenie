@@ -5,6 +5,8 @@
   max-width: 50rem;
   margin: auto;
   padding: 1.875rem 2.5rem;
+  /* background-color: #585858; */
+  background: linear-gradient(45deg, #585858, #838383, #585858);
 }
 
 .container h3,
@@ -110,7 +112,7 @@ focus {
 
 /* start here --> quick and dirty way to show some form examples. Should've made the following styles classes and apply these classes on the right elements within forms */
 form {
-    /* text-align: left; */
+  /* text-align: left; */
 }
 
 form label {
@@ -134,11 +136,11 @@ form .inputs div {
 }
 
 form h5 {
-    color: white;
-    font-size: 20px;
-    border-top: solid 5px #ffc426;
-    /* display: inline-block; */
-    text-align: left;
+  color: white;
+  font-size: 20px;
+  border-top: solid 5px #ffc426;
+  /* display: inline-block; */
+  text-align: left;
 }
 
 /* <-- end here */

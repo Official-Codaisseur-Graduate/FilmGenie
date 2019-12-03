@@ -1,7 +1,7 @@
 // page 25
 
-import React from 'react'
-import RightOwnerName from './RightOwnerName'
+import React from "react";
+import RightOwnerName from "./RightOwnerName";
 
 export default class RightOwnerFilmsForm extends React.Component {
   render() {
@@ -11,19 +11,27 @@ export default class RightOwnerFilmsForm extends React.Component {
         <div>
           <form>
             <label>Title</label>
-            <input type='text' name='title' placeholder='Title'></input>
+            <input type="text" name="title" placeholder="Title"></input>
             <label>IMDB Number</label>
-            <input type='text' name='imdbNumber' placeholder='IMDB Number'></input>
+            <input
+              type="text"
+              name="imdbNumber"
+              placeholder="IMDB Number"
+            ></input>
             <label>Territory</label>
-            <input type='text' name='territory' placeholder='Territory'></input>
+            <input type="text" name="territory" placeholder="Territory"></input>
             <label>Start date</label>
-            <input type='date' name='startDate' placeholder='Start date'></input>
+            <input
+              type="date"
+              name="startDate"
+              placeholder="Start date"
+            ></input>
             <label>End date</label>
-            <input type='date' name='endDate' placeholder='End date'></input>
-            <button className="to-side-right" onClick={this.props.details}>details</button>
+            <input type="date" name="endDate" placeholder="End date"></input>
+            <button onClick={this.addFilm}>ADD FILM</button>
           </form>
         </div>
       </div>
-    )
+    );
   }
 }
