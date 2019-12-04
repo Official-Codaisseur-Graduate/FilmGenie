@@ -12,6 +12,7 @@ import { loadSearchedFilms } from "../../../../../actions/fetchFilmDetails";
 
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import "../../../../../css/form.css";
 
 class RightOwnerFilms extends React.Component {
   state = {
@@ -78,11 +79,80 @@ class RightOwnerFilms extends React.Component {
         <h3>Right owner films</h3>
 
         <div>
-          <div>
+          {/* For now this is a hard-coded list */}
+          <ul style={{ listStyle: "none", margin: "0% 25%" }}>
+            <li>
+              <div className="foundFilmListItem">
+                <p
+                  style={{
+                    color: "white",
+                    paddingLeft: "35px",
+                    fontSize: "20px"
+                  }}
+                >
+                  Dear John{" "}
+                </p>
+                <button className="to-side-right" onClick={this.details}>
+                  details
+                </button>
+              </div>
+            </li>{" "}
+            <li>
+              <div className="foundFilmListItem">
+                <p
+                  style={{
+                    color: "white",
+                    paddingLeft: "35px",
+                    fontSize: "20px"
+                  }}
+                >
+                  Godfather 2{" "}
+                </p>
+                <button className="to-side-right" onClick={this.details}>
+                  details
+                </button>
+              </div>
+            </li>{" "}
+            <li>
+              <div className="foundFilmListItem">
+                <p
+                  style={{
+                    color: "white",
+                    paddingLeft: "35px",
+                    fontSize: "20px"
+                  }}
+                >
+                  Home Alone
+                </p>
+                <button className="to-side-right" onClick={this.details}>
+                  details
+                </button>
+              </div>
+            </li>{" "}
+            <li>
+              <div className="foundFilmListItem">
+                <p
+                  style={{
+                    color: "white",
+                    paddingLeft: "35px",
+                    fontSize: "20px"
+                  }}
+                >
+                  Notebook{" "}
+                </p>
+                <button className="to-side-right" onClick={this.details}>
+                  details
+                </button>
+              </div>
+            </li>{" "}
+          </ul>
+          {/* <div>
             <button className="to-side-right" onClick={this.details}>
               details
             </button>
-          </div>
+          </div> */}
+          <p>Search for a film to add rights for:</p>
+
           <RightOwnerFilmsForm
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
@@ -90,20 +160,7 @@ class RightOwnerFilms extends React.Component {
         </div>
         {!this.props.films && <p>loading...</p>}
         {this.props.films.map(film => (
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-              border: "1px solid gold",
-              padding: "5px",
-              margin: "10px",
-              borderRadius: "5px",
-              background: "linear-gradient(45deg,#888,#aaa,#888)",
-              backgroundColor: "#aaa"
-            }}
-          >
+          <div className="foundFilmListItem">
             <p
               style={{
                 color: "white",

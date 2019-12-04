@@ -1,9 +1,9 @@
 import request from "superagent";
 import fetchMock from "fetch-mock";
-export const FILMS_FETCHED = "FILMS_FETCHED";
+export const SEARCHED_FILMS_FETCHED = "SEARCHED_FILMS_FETCHED";
 
-const filmsFetched = films => ({
-  type: FILMS_FETCHED,
+const searchedFilmsFetched = films => ({
+  type: SEARCHED_FILMS_FETCHED,
   payload: films
 });
 
@@ -60,11 +60,11 @@ export const loadSearchedFilms = filmName => (dispatch, getState) => {
     }
   );
 
-  makeRequest().then(data => dispatch(filmsFetched(data)));
+  makeRequest().then(data => dispatch(searchedFilmsFetched(data)));
 
   //   .then(function(data) {
   //     console.log("got data", data);
-  //     filmsFetched(data);
+  //     searchedFilmsFetched(data);
   //   });
 
   fetch("http://filmgenie.com/api/FilmGenie/GetFilmsByName?name=test");
@@ -73,7 +73,7 @@ export const loadSearchedFilms = filmName => (dispatch, getState) => {
 
     .then(response => {
       console.log("RRRRRESPONSE!! ", response);
-      dispatch(filmsFetched(response.body));
+      dispatch(searchedFilmsFetched(response.body));
     })
 
     .then(

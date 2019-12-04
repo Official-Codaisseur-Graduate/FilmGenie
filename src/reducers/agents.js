@@ -1,9 +1,8 @@
-import { SEARCHED_FILMS_FETCHED } from "../actions/fetchFilmDetails";
+import { FETCH_AGENT_DETAILS } from "../actions/fetchAgentDetails";
 
 export default function(state = [], action = {}) {
-  console.log("HELLO FILMS FETCHED!!!", action);
   switch (action.type) {
-    case SEARCHED_FILMS_FETCHED:
+    case FETCH_AGENT_DETAILS:
       return (state = action.payload);
     default:
       return state;

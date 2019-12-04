@@ -1,13 +1,11 @@
 // page 25
 
 import React from "react";
-import RightOwnerName from "./RightOwnerName";
 
 export default class RightOwnerFilmsForm extends React.Component {
   render() {
     return (
       <div>
-        <RightOwnerName />
         <div>
           <form onSubmit={this.props.handleSubmit}>
             {/*  <label>Title</label>
