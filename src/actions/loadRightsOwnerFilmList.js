@@ -63,7 +63,7 @@ export const loadRightsOwnerFilmList = filmName => (dispatch, getState) => {
   //     filmsFetched(data);
   //   });
   console.log("before fetch");
-  fetch("/api/FilmGenie/GetFilmsByRightownerId?id=1")
+  fetch("http://filmgenie.com/api/FilmGenie/GetFilmsByRightownerId?id=1")
     /* request(`${baseUrl}/${filmName}`)
      */
     .then(response => {
