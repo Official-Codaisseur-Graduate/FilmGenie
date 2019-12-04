@@ -9,6 +9,31 @@
   background: linear-gradient(45deg, #585858, #838383, #585858);
 }
 
+.filmToAddDetails {
+  box-shadow: 0 0.25rem 0.5rem rgba(34, 34, 34, 0.08);
+  border: 1px solid #ffc426;
+  border-radius: 4px;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1.875rem 2.5rem;
+  /* background-color: #585858; */
+  background: linear-gradient(45deg, #888, #aaa, #888);
+}
+
+.foundFilmListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.5rem rgba(34, 34, 34, 0.08);
+  border: 1px solid #ffc426;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 4px;
+  background: linear-gradient(45deg, #888, #aaa, #888);
+  background-color: #aaa;
+}
+
 .container h3,
 h4 {
   text-transform: initial;
