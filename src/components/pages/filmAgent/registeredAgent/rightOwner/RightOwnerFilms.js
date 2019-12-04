@@ -5,6 +5,7 @@ import GoBackSideButton from "../../../../UI/GoBackSideButton";
 import RightOwnerFilmsForm from "../../../../forms/rightOwner/RightOwnerFilmsForm";
 import superagent from "superagent";
 import { loadFilms } from "../../../../../actions/fetchFilmDetails";
+import { loadRightsOwnerFilmList } from "../../../../../actions/loadRightsOwnerFilmList";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -61,7 +62,9 @@ export class RightOwnerFilms extends React.Component {
   //     ]
   //   });
   // };
-
+  componentDidMount() {
+    this.props.loadRightsOwnerFilmList();
+  }
   render() {
     console.log("props films: ", this.props.films);
 
@@ -97,6 +100,6 @@ function mapStateToProps(reduxState) {
   };
 }
 
-const mapDispatchToProps = { loadFilms };
+const mapDispatchToProps = { loadFilms, loadRightsOwnerFilmList };
 
 export default connect(mapStateToProps, mapDispatchToProps)(RightOwnerFilms);
