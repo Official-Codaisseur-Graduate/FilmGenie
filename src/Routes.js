@@ -248,7 +248,7 @@ function Routes() {
       <Route path="/cinemaGoer/Ticket" exact component={Ticket} />
       <Route path="/Film" exact component={Film} />
       <Route
-        path="/rightOwner/rightOwnerId/films/filmId/add"
+        path="/rightOwner/:rightOwnerId/films/:filmId/add"
         exact
         component={RightOwnerAddFilmsForm}
       />
