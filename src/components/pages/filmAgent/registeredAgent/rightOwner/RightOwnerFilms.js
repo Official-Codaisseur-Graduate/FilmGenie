@@ -3,13 +3,17 @@
 import React from "react";
 import GoBackSideButton from "../../../../UI/GoBackSideButton";
 import RightOwnerFilmsForm from "../../../../forms/rightOwner/RightOwnerFilmsForm";
+
 import superagent from "superagent";
-import { loadFilms } from "../../../../../actions/fetchFilmDetails";
+
 import { loadRightsOwnerFilmList } from "../../../../../actions/loadRightsOwnerFilmList";
+
+import { loadSearchedFilms } from "../../../../../actions/fetchFilmDetails";
+
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-export class RightOwnerFilms extends React.Component {
+class RightOwnerFilms extends React.Component {
   state = {
     films: [
       {
@@ -41,7 +45,7 @@ export class RightOwnerFilms extends React.Component {
 
     this.setState({ startDate: Number(this.state.startDate) });
     console.log("NEW FILM STATE: ", this.state);
-    this.props.loadFilms(this.state);
+    this.props.loadSearchedFilms(this.state);
 
     this.setState({
       filmName: " "
@@ -72,7 +76,7 @@ export class RightOwnerFilms extends React.Component {
       <div>
         <GoBackSideButton path="/filmAgent/registeredAgent/rightOwner/RightOwner" />
         <h3>Right owner films</h3>
-        return (
+
         <div>
           <div>
             <button className="to-side-right" onClick={this.details}>
@@ -84,11 +88,36 @@ export class RightOwnerFilms extends React.Component {
             handleChange={this.handleChange}
           />
         </div>
-        <ul></ul>
+        {!this.props.films && <p>loading...</p>}
         {this.props.films.map(film => (
-          <Link to={`/rightOwner/${1}/films/${film.filmid}/add`}>
-            <li>{film.primaryTitle}</li>
-          </Link>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              border: "1px solid gold",
+              padding: "5px",
+              margin: "10px",
+              borderRadius: "5px",
+              background: "linear-gradient(45deg,#888,#aaa,#888)",
+              backgroundColor: "#aaa"
+            }}
+          >
+            <p
+              style={{
+                color: "white",
+                paddingLeft: "35px",
+                fontSize: "20px"
+              }}
+            >
+              <strong>{film.primaryTitle}</strong>
+            </p>
+
+            <Link to={`/rightOwner/${1}/films/${film.filmid}/add`}>
+              <button className="to-side-right">details</button>
+            </Link>
+          </div>
         ))}
       </div>
     );
@@ -100,6 +129,9 @@ function mapStateToProps(reduxState) {
   };
 }
 
-const mapDispatchToProps = { loadFilms, loadRightsOwnerFilmList };
+
+
+const mapDispatchToProps = { loadSearchedFilms,loadRightsOwnerFilmList  };
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(RightOwnerFilms);
